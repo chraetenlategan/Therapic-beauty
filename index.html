@@ -1,16 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Therapic Beauty – Build Your Beauty Empire</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Great+Vibes&display=swap"
+    rel="stylesheet" />
   <style>
     /* ───── RESET & BASE ───── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
     body {
       font-family: 'Jost', sans-serif;
       background: #FAF6F1;
@@ -18,37 +33,68 @@
       overflow-x: hidden;
     }
 
+
     /* ───── CSS VARIABLES ───── */
     :root {
-      --pink:       #D4899A;
+      --pink: #D4899A;
       --pink-light: #F0C5CF;
-      --pink-deep:  #B96D80;
-      --fawn:       #C4A882;
+      --pink-deep: #B96D80;
+      --fawn: #C4A882;
       --fawn-light: #E8D9C5;
-      --fawn-deep:  #A08560;
-      --cream:      #FAF6F1;
+      --fawn-deep: #A08560;
+      --cream: #FAF6F1;
       --cream-dark: #F2EBE0;
-      --warm-dark:  #3A2E28;
-      --warm-mid:   #7A6258;
+      --warm-dark: #3A2E28;
+      --warm-mid: #7A6258;
       --warm-light: #B5A59A;
-      --white:      #FFFFFF;
-      --shadow:     0 4px 30px rgba(58,46,40,0.10);
-      --shadow-lg:  0 12px 50px rgba(58,46,40,0.16);
+      --white: #FFFFFF;
+      --shadow: 0 4px 30px rgba(58, 46, 40, 0.10);
+      --shadow-lg: 0 12px 50px rgba(58, 46, 40, 0.16);
     }
 
     /* ───── TYPOGRAPHY ───── */
-    .display { font-family: 'Cormorant Garamond', serif; }
-    .script   { font-family: 'Great Vibes', cursive; }
+    .display {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .script {
+      font-family: 'Great Vibes', cursive;
+    }
 
     /* ───── UTILITIES ───── */
-    .page { display: none; }
-    .page.active { display: block; }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-    .section { padding: 90px 0; }
-    .section-sm { padding: 60px 0; }
-    .text-center { text-align: center; }
-    .text-pink { color: var(--pink-deep); }
-    .text-fawn  { color: var(--fawn-deep); }
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-sm {
+      padding: 60px 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-pink {
+      color: var(--pink-deep);
+    }
+
+    .text-fawn {
+      color: var(--fawn-deep);
+    }
 
     /* ───── SECTION LABELS ───── */
     .eyebrow {
@@ -61,12 +107,39 @@
       margin-bottom: 16px;
       display: block;
     }
-    h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; line-height: 1.15; }
-    h1 { font-size: clamp(48px, 7vw, 88px); font-weight: 300; }
-    h2 { font-size: clamp(34px, 4.5vw, 54px); font-weight: 400; }
-    h3 { font-size: clamp(22px, 3vw, 30px); font-weight: 400; }
-    h4 { font-size: 20px; font-weight: 500; }
-    p  { line-height: 1.8; color: var(--warm-mid); }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 1.15;
+    }
+
+    h1 {
+      font-size: clamp(48px, 7vw, 88px);
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: clamp(34px, 4.5vw, 54px);
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 400;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    p {
+      line-height: 1.8;
+      color: var(--warm-mid);
+    }
 
     /* ───── BUTTONS ───── */
     .btn {
@@ -83,31 +156,37 @@
       border: none;
       transition: all 0.3s ease;
     }
+
     .btn-primary {
       background: var(--pink);
       color: #fff;
-      box-shadow: 0 6px 24px rgba(212,137,154,0.40);
+      box-shadow: 0 6px 24px rgba(212, 137, 154, 0.40);
     }
+
     .btn-primary:hover {
       background: var(--pink-deep);
       transform: translateY(-2px);
-      box-shadow: 0 10px 32px rgba(212,137,154,0.50);
+      box-shadow: 0 10px 32px rgba(212, 137, 154, 0.50);
     }
+
     .btn-outline {
       background: transparent;
       color: var(--pink-deep);
       border: 1.5px solid var(--pink);
     }
+
     .btn-outline:hover {
       background: var(--pink);
       color: #fff;
       transform: translateY(-2px);
     }
+
     .btn-fawn {
       background: var(--fawn);
       color: #fff;
-      box-shadow: 0 6px 24px rgba(196,168,130,0.40);
+      box-shadow: 0 6px 24px rgba(196, 168, 130, 0.40);
     }
+
     .btn-fawn:hover {
       background: var(--fawn-deep);
       transform: translateY(-2px);
@@ -116,18 +195,22 @@
     /* ───── NAVBAR ───── */
     #navbar {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 1000;
       padding: 20px 0;
       transition: all 0.4s ease;
       background: transparent;
     }
+
     #navbar.scrolled {
-      background: rgba(250,246,241,0.96);
+      background: rgba(250, 246, 241, 0.96);
       backdrop-filter: blur(12px);
       padding: 14px 0;
-      box-shadow: 0 2px 20px rgba(58,46,40,0.08);
+      box-shadow: 0 2px 20px rgba(58, 46, 40, 0.08);
     }
+
     .nav-inner {
       display: flex;
       align-items: center;
@@ -136,6 +219,7 @@
       margin: 0 auto;
       padding: 0 24px;
     }
+
     .nav-brand {
       font-family: 'Great Vibes', cursive;
       font-size: 32px;
@@ -144,13 +228,18 @@
       text-decoration: none;
       transition: opacity 0.2s;
     }
-    .nav-brand:hover { opacity: 0.8; }
+
+    .nav-brand:hover {
+      opacity: 0.8;
+    }
+
     .nav-links {
       display: flex;
       list-style: none;
       gap: 36px;
       align-items: center;
     }
+
     .nav-links a {
       font-size: 12px;
       font-weight: 600;
@@ -163,10 +252,13 @@
       padding-bottom: 2px;
       border-bottom: 1.5px solid transparent;
     }
-    .nav-links a:hover, .nav-links a.active {
+
+    .nav-links a:hover,
+    .nav-links a.active {
       color: var(--pink-deep);
       border-bottom-color: var(--pink-deep);
     }
+
     .nav-cart {
       position: relative;
       cursor: pointer;
@@ -182,20 +274,33 @@
       text-transform: uppercase;
       transition: all 0.3s;
     }
-    .nav-cart:hover { background: var(--pink-deep); transform: translateY(-1px); }
+
+    .nav-cart:hover {
+      background: var(--pink-deep);
+      transform: translateY(-1px);
+    }
+
     .cart-badge {
       position: absolute;
-      top: -6px; right: -6px;
+      top: -6px;
+      right: -6px;
       background: var(--fawn-deep);
       color: #fff;
       border-radius: 50%;
-      width: 18px; height: 18px;
+      width: 18px;
+      height: 18px;
       font-size: 10px;
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-weight: 700;
       display: none;
     }
-    .cart-badge.show { display: flex; }
+
+    .cart-badge.show {
+      display: flex;
+    }
+
     .hamburger {
       display: none;
       flex-direction: column;
@@ -205,16 +310,22 @@
       border: none;
       padding: 4px;
     }
+
     .hamburger span {
-      width: 24px; height: 2px;
+      width: 24px;
+      height: 2px;
       background: var(--warm-dark);
       border-radius: 2px;
       transition: all 0.3s;
     }
+
     .mobile-menu {
       display: none;
       position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       background: var(--cream);
       z-index: 999;
       flex-direction: column;
@@ -222,7 +333,11 @@
       justify-content: center;
       gap: 32px;
     }
-    .mobile-menu.open { display: flex; }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
     .mobile-menu a {
       font-family: 'Cormorant Garamond', serif;
       font-size: 40px;
@@ -231,12 +346,19 @@
       text-decoration: none;
       transition: color 0.2s;
     }
-    .mobile-menu a:hover { color: var(--pink-deep); }
+
+    .mobile-menu a:hover {
+      color: var(--pink-deep);
+    }
+
     .mobile-close {
       position: absolute;
-      top: 24px; right: 28px;
-      background: none; border: none;
-      font-size: 32px; cursor: pointer;
+      top: 24px;
+      right: 28px;
+      background: none;
+      border: none;
+      font-size: 32px;
+      cursor: pointer;
       color: var(--warm-mid);
     }
 
@@ -250,6 +372,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .hero-left {
       display: flex;
       flex-direction: column;
@@ -258,30 +381,41 @@
       position: relative;
       z-index: 2;
     }
+
     .hero-left .script-accent {
       font-family: 'Great Vibes', cursive;
       font-size: 28px;
       color: var(--fawn-deep);
       margin-bottom: 8px;
     }
+
     .hero-left h1 {
       margin-bottom: 24px;
       color: var(--warm-dark);
     }
+
     .hero-left h1 em {
       font-style: italic;
       color: var(--pink-deep);
     }
+
     .hero-left p {
       max-width: 420px;
       font-size: 16px;
       margin-bottom: 40px;
     }
-    .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
     .hero-right {
       position: relative;
       overflow: hidden;
     }
+
     .hero-right::before {
       content: '';
       position: absolute;
@@ -289,51 +423,81 @@
       background: linear-gradient(135deg, var(--fawn-light) 0%, var(--pink-light) 100%);
       z-index: 0;
     }
+
     .hero-img {
-      width: 100%; height: 100%;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
+      object-position: top center;
       position: relative;
       z-index: 1;
       opacity: 0.92;
     }
+
     .hero-placeholder {
-      width: 100%; height: 100%;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       padding: 40px;
       position: relative;
       z-index: 1;
     }
-    .hero-placeholder .ph-icon { font-size: 64px; margin-bottom: 16px; opacity: 0.4; }
-    .hero-placeholder p { color: var(--fawn-deep); font-size: 13px; }
+
+    .hero-placeholder .ph-icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+      opacity: 0.4;
+    }
+
+    .hero-placeholder p {
+      color: var(--fawn-deep);
+      font-size: 13px;
+    }
+
     .hero-decor {
       position: absolute;
-      bottom: -60px; left: -60px;
-      width: 300px; height: 300px;
+      bottom: -60px;
+      left: -60px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
       background: radial-gradient(circle, var(--pink-light) 0%, transparent 70%);
       z-index: 1;
       pointer-events: none;
     }
+
     .hero-decor-2 {
       position: absolute;
-      top: 40px; right: 40px;
-      width: 180px; height: 180px;
+      top: 40px;
+      right: 40px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      border: 1px solid rgba(196,168,130,0.30);
+      border: 1px solid rgba(196, 168, 130, 0.30);
       z-index: 1;
     }
+
     .scroll-indicator {
       position: absolute;
-      bottom: 36px; left: 80px;
-      display: flex; align-items: center; gap: 12px;
-      font-size: 11px; letter-spacing: 3px;
-      text-transform: uppercase; color: var(--warm-light);
+      bottom: 36px;
+      left: 80px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--warm-light);
       z-index: 2;
     }
+
     .scroll-line {
-      width: 40px; height: 1px;
+      width: 40px;
+      height: 1px;
       background: var(--warm-light);
     }
 
@@ -343,24 +507,38 @@
       padding: 18px 0;
       overflow: hidden;
     }
+
     .strip-inner {
       display: flex;
       gap: 60px;
       animation: marquee 20s linear infinite;
       white-space: nowrap;
     }
+
     .strip-item {
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.85);
-      display: flex; align-items: center; gap: 16px;
+      color: rgba(255, 255, 255, 0.85);
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
-    .strip-item::before { content: '✦'; color: var(--pink-light); }
+
+    .strip-item::before {
+      content: '✦';
+      color: var(--pink-light);
+    }
+
     @keyframes marquee {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
     }
 
     /* USP Grid */
@@ -369,6 +547,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 32px;
     }
+
     .usp-card {
       background: var(--white);
       border-radius: 20px;
@@ -379,24 +558,42 @@
       position: relative;
       overflow: hidden;
     }
+
     .usp-card::after {
       content: '';
       position: absolute;
-      bottom: 0; left: 0; right: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       height: 3px;
       background: linear-gradient(90deg, var(--pink), var(--fawn));
     }
-    .usp-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+
+    .usp-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
     .usp-icon {
-      width: 64px; height: 64px;
+      width: 64px;
+      height: 64px;
       background: linear-gradient(135deg, var(--pink-light), var(--fawn-light));
       border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 26px;
       margin: 0 auto 20px;
     }
-    .usp-card h4 { margin-bottom: 10px; font-size: 22px; }
-    .usp-card p  { font-size: 14px; }
+
+    .usp-card h4 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .usp-card p {
+      font-size: 14px;
+    }
 
     /* Gallery Strip */
     .gallery-strip {
@@ -404,6 +601,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
     }
+
     .gallery-item {
       aspect-ratio: 4/5;
       border-radius: 16px;
@@ -411,23 +609,46 @@
       position: relative;
       background: linear-gradient(135deg, var(--fawn-light), var(--pink-light));
     }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
-    .gallery-item:hover img { transform: scale(1.05); }
-    .gallery-ph {
-      width: 100%; height: 100%;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      color: var(--fawn-deep); font-size: 13px;
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
     }
-    .gallery-ph span { font-size: 36px; margin-bottom: 8px; opacity: 0.4; }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-ph {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--fawn-deep);
+      font-size: 13px;
+    }
+
+    .gallery-ph span {
+      font-size: 36px;
+      margin-bottom: 8px;
+      opacity: 0.4;
+    }
 
     /* Testimonial */
-    .testimonial-section { background: var(--cream-dark); }
+    .testimonial-section {
+      background: var(--cream-dark);
+    }
+
     .testimonial-cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
     }
+
     .t-card {
       background: var(--white);
       border-radius: 20px;
@@ -435,26 +656,57 @@
       box-shadow: var(--shadow);
       position: relative;
     }
+
     .t-card::before {
       content: '"';
       font-family: 'Cormorant Garamond', serif;
       font-size: 80px;
       color: var(--pink-light);
       position: absolute;
-      top: 10px; left: 24px;
+      top: 10px;
+      left: 24px;
       line-height: 1;
     }
-    .t-card p { font-size: 14px; margin-bottom: 20px; padding-top: 24px; }
-    .t-author { display: flex; align-items: center; gap: 12px; }
+
+    .t-card p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      padding-top: 24px;
+    }
+
+    .t-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
     .t-avatar {
-      width: 40px; height: 40px; border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
       background: linear-gradient(135deg, var(--pink-light), var(--fawn-light));
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 16px;
     }
-    .t-name { font-weight: 600; font-size: 13px; color: var(--warm-dark); }
-    .t-role { font-size: 11px; color: var(--warm-light); }
-    .star-row { color: var(--pink); margin-bottom: 8px; font-size: 13px; }
+
+    .t-name {
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--warm-dark);
+    }
+
+    .t-role {
+      font-size: 11px;
+      color: var(--warm-light);
+    }
+
+    .star-row {
+      color: var(--pink);
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
 
     /* CTA Banner */
     .cta-banner {
@@ -465,32 +717,49 @@
       position: relative;
       overflow: hidden;
     }
+
     .cta-banner::before {
       content: '';
       position: absolute;
-      width: 400px; height: 400px;
+      width: 400px;
+      height: 400px;
       border-radius: 50%;
-      border: 1px solid rgba(255,255,255,0.15);
-      top: -100px; right: -80px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      top: -100px;
+      right: -80px;
     }
+
     .cta-banner::after {
       content: '';
       position: absolute;
-      width: 300px; height: 300px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
-      border: 1px solid rgba(255,255,255,0.10);
-      bottom: -80px; left: -60px;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      bottom: -80px;
+      left: -60px;
     }
-    .cta-banner h2 { color: #fff; margin-bottom: 16px; }
-    .cta-banner p  { color: rgba(255,255,255,0.80); max-width: 500px; margin: 0 auto 36px; }
+
+    .cta-banner h2 {
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .cta-banner p {
+      color: rgba(255, 255, 255, 0.80);
+      max-width: 500px;
+      margin: 0 auto 36px;
+    }
+
     .btn-white {
       background: #fff;
       color: var(--pink-deep);
     }
+
     .btn-white:hover {
       background: var(--cream);
       transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     }
 
     /* ──────────────────────────────────
@@ -500,15 +769,18 @@
       padding: 160px 0 80px;
       background: linear-gradient(160deg, var(--cream) 0%, var(--fawn-light) 100%);
     }
+
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 80px;
       align-items: center;
     }
+
     .about-img-wrap {
       position: relative;
     }
+
     .about-img-main {
       width: 100%;
       aspect-ratio: 4/5;
@@ -516,10 +788,17 @@
       overflow: hidden;
       background: linear-gradient(135deg, var(--fawn-light), var(--pink-light));
     }
-    .about-img-main img { width: 100%; height: 100%; object-fit: cover; }
+
+    .about-img-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .about-accent-box {
       position: absolute;
-      bottom: -30px; right: -30px;
+      bottom: -30px;
+      right: -30px;
       background: var(--pink-deep);
       color: #fff;
       padding: 28px 32px;
@@ -527,6 +806,7 @@
       text-align: center;
       box-shadow: var(--shadow-lg);
     }
+
     .about-accent-box .big-num {
       font-family: 'Cormorant Garamond', serif;
       font-size: 48px;
@@ -534,10 +814,26 @@
       line-height: 1;
       display: block;
     }
-    .about-accent-box span:last-child { font-size: 12px; letter-spacing: 1px; opacity: 0.85; }
-    .about-content h2 { margin-bottom: 20px; }
-    .about-content p  { margin-bottom: 20px; }
-    .values-list { list-style: none; margin-top: 28px; }
+
+    .about-accent-box span:last-child {
+      font-size: 12px;
+      letter-spacing: 1px;
+      opacity: 0.85;
+    }
+
+    .about-content h2 {
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      margin-bottom: 20px;
+    }
+
+    .values-list {
+      list-style: none;
+      margin-top: 28px;
+    }
+
     .values-list li {
       display: flex;
       align-items: flex-start;
@@ -546,24 +842,32 @@
       font-size: 15px;
       color: var(--warm-mid);
     }
+
     .values-list li .v-icon {
-      width: 28px; height: 28px;
+      width: 28px;
+      height: 28px;
       min-width: 28px;
       border-radius: 50%;
       background: var(--pink-light);
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 13px;
       margin-top: 2px;
     }
 
     /* Owner profile */
-    .owner-section { background: var(--cream-dark); }
+    .owner-section {
+      background: var(--cream-dark);
+    }
+
     .owner-grid {
       display: grid;
       grid-template-columns: 360px 1fr;
       gap: 64px;
       align-items: center;
     }
+
     .owner-photo {
       aspect-ratio: 3/4;
       border-radius: 20px;
@@ -571,7 +875,13 @@
       background: linear-gradient(135deg, var(--pink-light), var(--fawn-light));
       position: relative;
     }
-    .owner-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+    .owner-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .owner-content .script-accent {
       font-family: 'Great Vibes', cursive;
       font-size: 26px;
@@ -579,8 +889,15 @@
       display: block;
       margin-bottom: 4px;
     }
-    .owner-content h2 { margin-bottom: 20px; }
-    .owner-content p  { margin-bottom: 16px; }
+
+    .owner-content h2 {
+      margin-bottom: 20px;
+    }
+
+    .owner-content p {
+      margin-bottom: 16px;
+    }
+
     .signature {
       font-family: 'Great Vibes', cursive;
       font-size: 40px;
@@ -596,11 +913,13 @@
       background: linear-gradient(160deg, var(--cream) 0%, var(--pink-light) 100%);
       text-align: center;
     }
+
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 28px;
     }
+
     .service-card {
       background: var(--white);
       border-radius: 20px;
@@ -608,19 +927,33 @@
       box-shadow: var(--shadow);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
     .service-card-img {
       height: 220px;
       background: linear-gradient(135deg, var(--fawn-light), var(--pink-light));
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 48px;
       position: relative;
       overflow: hidden;
     }
-    .service-card-img img { width: 100%; height: 100%; object-fit: cover; }
+
+    .service-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .service-badge {
       position: absolute;
-      top: 16px; right: 16px;
+      top: 16px;
+      right: 16px;
       background: var(--pink-deep);
       color: #fff;
       padding: 4px 12px;
@@ -630,9 +963,21 @@
       letter-spacing: 1.5px;
       text-transform: uppercase;
     }
-    .service-card-body { padding: 28px; }
-    .service-card-body h3 { margin-bottom: 12px; font-size: 24px; }
-    .service-card-body p  { font-size: 14px; margin-bottom: 20px; }
+
+    .service-card-body {
+      padding: 28px;
+    }
+
+    .service-card-body h3 {
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+
+    .service-card-body p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
     .service-price {
       font-family: 'Cormorant Garamond', serif;
       font-size: 30px;
@@ -641,10 +986,12 @@
       margin-bottom: 20px;
       display: block;
     }
+
     .service-includes {
       list-style: none;
       margin-bottom: 24px;
     }
+
     .service-includes li {
       font-size: 13px;
       color: var(--warm-mid);
@@ -653,35 +1000,51 @@
       align-items: center;
       gap: 8px;
     }
-    .service-includes li::before { content: '✓'; color: var(--pink); font-weight: 700; }
+
+    .service-includes li::before {
+      content: '✓';
+      color: var(--pink);
+      font-weight: 700;
+    }
 
     /* Process */
-    .process-section { background: var(--cream-dark); }
+    .process-section {
+      background: var(--cream-dark);
+    }
+
     .process-steps {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 28px;
       position: relative;
     }
+
     .process-steps::before {
       content: '';
       position: absolute;
-      top: 40px; left: 12%; right: 12%;
+      top: 40px;
+      left: 12%;
+      right: 12%;
       height: 1px;
       background: linear-gradient(90deg, var(--pink-light), var(--fawn-light));
       z-index: 0;
     }
+
     .process-step {
       text-align: center;
       position: relative;
       z-index: 1;
     }
+
     .step-num {
-      width: 80px; height: 80px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       background: var(--white);
       border: 2px solid var(--pink-light);
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-family: 'Cormorant Garamond', serif;
       font-size: 32px;
       font-weight: 600;
@@ -689,8 +1052,14 @@
       margin: 0 auto 20px;
       box-shadow: var(--shadow);
     }
-    .process-step h4 { margin-bottom: 8px; }
-    .process-step p  { font-size: 13px; }
+
+    .process-step h4 {
+      margin-bottom: 8px;
+    }
+
+    .process-step p {
+      font-size: 13px;
+    }
 
     /* ──────────────────────────────────
        PAGE: SHOP
@@ -700,6 +1069,7 @@
       background: linear-gradient(160deg, var(--cream) 0%, var(--fawn-light) 100%);
       text-align: center;
     }
+
     .shop-filter {
       display: flex;
       justify-content: center;
@@ -707,6 +1077,7 @@
       flex-wrap: wrap;
       margin-bottom: 48px;
     }
+
     .filter-btn {
       padding: 10px 26px;
       border-radius: 50px;
@@ -721,16 +1092,20 @@
       cursor: pointer;
       transition: all 0.25s;
     }
-    .filter-btn:hover, .filter-btn.active {
+
+    .filter-btn:hover,
+    .filter-btn.active {
       background: var(--pink);
       border-color: var(--pink);
       color: #fff;
     }
+
     .products-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 28px;
     }
+
     .product-card {
       background: var(--white);
       border-radius: 20px;
@@ -738,18 +1113,34 @@
       box-shadow: var(--shadow);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .product-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
     .product-img {
       aspect-ratio: 1;
       overflow: hidden;
       position: relative;
       background: linear-gradient(135deg, var(--fawn-light), var(--pink-light));
     }
-    .product-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
-    .product-card:hover .product-img img { transform: scale(1.06); }
+
+    .product-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .product-card:hover .product-img img {
+      transform: scale(1.06);
+    }
+
     .product-tag {
       position: absolute;
-      top: 14px; left: 14px;
+      top: 14px;
+      left: 14px;
       background: var(--pink-deep);
       color: #fff;
       padding: 3px 12px;
@@ -759,25 +1150,45 @@
       letter-spacing: 1px;
       text-transform: uppercase;
     }
+
     .product-ph {
-      width: 100%; height: 100%;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       font-size: 52px;
     }
-    .product-body { padding: 22px 24px 28px; }
-    .product-body h4 { font-size: 20px; margin-bottom: 6px; }
-    .product-body p  { font-size: 13px; margin-bottom: 16px; color: var(--warm-light); }
+
+    .product-body {
+      padding: 22px 24px 28px;
+    }
+
+    .product-body h4 {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .product-body p {
+      font-size: 13px;
+      margin-bottom: 16px;
+      color: var(--warm-light);
+    }
+
     .product-footer {
-      display: flex; align-items: center;
+      display: flex;
+      align-items: center;
       justify-content: space-between;
     }
+
     .product-price {
       font-family: 'Cormorant Garamond', serif;
       font-size: 28px;
       font-weight: 600;
       color: var(--pink-deep);
     }
+
     .add-to-cart {
       background: var(--pink);
       color: #fff;
@@ -792,50 +1203,88 @@
       cursor: pointer;
       transition: all 0.25s;
     }
-    .add-to-cart:hover { background: var(--pink-deep); transform: scale(1.04); }
+
+    .add-to-cart:hover {
+      background: var(--pink-deep);
+      transform: scale(1.04);
+    }
 
     /* Cart Sidebar */
     .cart-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(58,46,40,0.50);
+      background: rgba(58, 46, 40, 0.50);
       z-index: 2000;
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.3s;
     }
-    .cart-overlay.open { opacity: 1; pointer-events: all; }
+
+    .cart-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
     .cart-sidebar {
       position: fixed;
       right: -420px;
-      top: 0; bottom: 0;
+      top: 0;
+      bottom: 0;
       width: 420px;
       background: var(--cream);
       z-index: 2001;
       box-shadow: var(--shadow-lg);
-      transition: right 0.4s cubic-bezier(0.4,0,0.2,1);
+      transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       display: flex;
       flex-direction: column;
     }
-    .cart-sidebar.open { right: 0; }
+
+    .cart-sidebar.open {
+      right: 0;
+    }
+
     .cart-header {
       padding: 28px 28px 20px;
       border-bottom: 1px solid var(--fawn-light);
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    .cart-header h3 { font-size: 26px; }
+
+    .cart-header h3 {
+      font-size: 26px;
+    }
+
     .cart-close {
-      background: none; border: none;
-      font-size: 24px; cursor: pointer;
-      color: var(--warm-mid); transition: color 0.2s;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: var(--warm-mid);
+      transition: color 0.2s;
     }
-    .cart-close:hover { color: var(--pink-deep); }
-    .cart-items { flex: 1; overflow-y: auto; padding: 20px 28px; }
+
+    .cart-close:hover {
+      color: var(--pink-deep);
+    }
+
+    .cart-items {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 28px;
+    }
+
     .cart-empty {
       text-align: center;
       padding: 60px 0;
     }
-    .cart-empty p { color: var(--warm-light); font-size: 14px; margin-top: 8px; }
+
+    .cart-empty p {
+      color: var(--warm-light);
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
     .cart-item {
       display: flex;
       gap: 16px;
@@ -843,48 +1292,104 @@
       padding: 16px 0;
       border-bottom: 1px solid var(--fawn-light);
     }
+
     .cart-item-thumb {
-      width: 70px; height: 70px;
+      width: 70px;
+      height: 70px;
       border-radius: 12px;
       background: linear-gradient(135deg, var(--fawn-light), var(--pink-light));
       overflow: hidden;
       flex-shrink: 0;
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 26px;
     }
-    .cart-item-info { flex: 1; }
-    .cart-item-info h4 { font-size: 15px; margin-bottom: 4px; }
-    .cart-item-price { color: var(--pink-deep); font-size: 15px; font-weight: 600; }
+
+    .cart-item-info {
+      flex: 1;
+    }
+
+    .cart-item-info h4 {
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .cart-item-price {
+      color: var(--pink-deep);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
     .cart-item-qty {
-      display: flex; align-items: center; gap: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       margin-top: 6px;
     }
+
     .qty-btn {
-      width: 24px; height: 24px;
+      width: 24px;
+      height: 24px;
       border-radius: 50%;
       border: 1.5px solid var(--fawn);
       background: none;
       cursor: pointer;
       font-size: 16px;
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: var(--warm-mid);
       transition: all 0.2s;
     }
-    .qty-btn:hover { background: var(--pink); border-color: var(--pink); color: #fff; }
-    .qty-num { font-size: 14px; font-weight: 600; min-width: 20px; text-align: center; }
-    .remove-item { background: none; border: none; cursor: pointer; color: var(--warm-light); font-size: 18px; transition: color 0.2s; }
-    .remove-item:hover { color: #c0392b; }
+
+    .qty-btn:hover {
+      background: var(--pink);
+      border-color: var(--pink);
+      color: #fff;
+    }
+
+    .qty-num {
+      font-size: 14px;
+      font-weight: 600;
+      min-width: 20px;
+      text-align: center;
+    }
+
+    .remove-item {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--warm-light);
+      font-size: 18px;
+      transition: color 0.2s;
+    }
+
+    .remove-item:hover {
+      color: #c0392b;
+    }
+
     .cart-footer {
       padding: 24px 28px;
       border-top: 1px solid var(--fawn-light);
       background: var(--white);
     }
+
     .cart-total {
-      display: flex; justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
       margin-bottom: 20px;
     }
-    .cart-total span:first-child { font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--warm-mid); }
+
+    .cart-total span:first-child {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--warm-mid);
+    }
+
     .cart-total-amount {
       font-family: 'Cormorant Garamond', serif;
       font-size: 32px;
@@ -896,13 +1401,17 @@
     .modal-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(58,46,40,0.60);
+      background: rgba(58, 46, 40, 0.60);
       z-index: 3000;
       display: none;
       align-items: center;
       justify-content: center;
     }
-    .modal-overlay.open { display: flex; }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
     .modal {
       background: var(--cream);
       border-radius: 24px;
@@ -914,15 +1423,27 @@
       box-shadow: var(--shadow-lg);
       position: relative;
     }
-    .modal h3 { font-size: 32px; margin-bottom: 28px; }
+
+    .modal h3 {
+      font-size: 32px;
+      margin-bottom: 28px;
+    }
+
     .modal-close {
       position: absolute;
-      top: 20px; right: 24px;
-      background: none; border: none;
-      font-size: 26px; cursor: pointer;
+      top: 20px;
+      right: 24px;
+      background: none;
+      border: none;
+      font-size: 26px;
+      cursor: pointer;
       color: var(--warm-mid);
     }
-    .form-group { margin-bottom: 20px; }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
     .form-group label {
       display: block;
       font-size: 11px;
@@ -932,7 +1453,9 @@
       color: var(--warm-mid);
       margin-bottom: 8px;
     }
-    .form-group input, .form-group select {
+
+    .form-group input,
+    .form-group select {
       width: 100%;
       padding: 14px 18px;
       border: 1.5px solid var(--fawn-light);
@@ -944,8 +1467,18 @@
       outline: none;
       transition: border-color 0.2s;
     }
-    .form-group input:focus, .form-group select:focus { border-color: var(--pink); }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--pink);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
     .payment-note {
       background: var(--fawn-light);
       border-radius: 12px;
@@ -957,12 +1490,21 @@
       align-items: flex-start;
       gap: 10px;
     }
+
     .order-success {
       text-align: center;
       padding: 20px 0;
     }
-    .success-icon { font-size: 64px; margin-bottom: 16px; }
-    .order-success h3 { color: var(--pink-deep); margin-bottom: 12px; }
+
+    .success-icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+
+    .order-success h3 {
+      color: var(--pink-deep);
+      margin-bottom: 12px;
+    }
 
     /* ──────────────────────────────────
        PAGE: CONTACT
@@ -972,14 +1514,23 @@
       background: linear-gradient(160deg, var(--cream) 0%, var(--pink-light) 100%);
       text-align: center;
     }
+
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1.4fr;
       gap: 60px;
       align-items: start;
     }
-    .contact-info h3 { font-size: 28px; margin-bottom: 24px; }
-    .contact-info p  { margin-bottom: 32px; }
+
+    .contact-info h3 {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+
+    .contact-info p {
+      margin-bottom: 32px;
+    }
+
     .contact-item {
       display: flex;
       align-items: center;
@@ -993,20 +1544,48 @@
       color: var(--warm-dark);
       transition: transform 0.2s;
     }
-    .contact-item:hover { transform: translateX(4px); }
+
+    .contact-item:hover {
+      transform: translateX(4px);
+    }
+
     .contact-icon {
-      width: 48px; height: 48px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
       background: linear-gradient(135deg, var(--pink-light), var(--fawn-light));
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 20px;
       flex-shrink: 0;
     }
-    .contact-item-text strong { display: block; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--warm-mid); margin-bottom: 2px; }
-    .contact-item-text span  { font-size: 15px; color: var(--warm-dark); }
-    .social-links { display: flex; gap: 12px; margin-top: 32px; }
+
+    .contact-item-text strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--warm-mid);
+      margin-bottom: 2px;
+    }
+
+    .contact-item-text span {
+      font-size: 15px;
+      color: var(--warm-dark);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
     .social-btn {
-      display: flex; align-items: center; gap: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       padding: 12px 20px;
       border-radius: 50px;
       border: 1.5px solid var(--fawn-light);
@@ -1019,14 +1598,25 @@
       transition: all 0.25s;
       box-shadow: var(--shadow);
     }
-    .social-btn:hover { background: var(--pink); border-color: var(--pink); color: #fff; }
+
+    .social-btn:hover {
+      background: var(--pink);
+      border-color: var(--pink);
+      color: #fff;
+    }
+
     .contact-form {
       background: var(--white);
       border-radius: 24px;
       padding: 48px;
       box-shadow: var(--shadow-lg);
     }
-    .contact-form h3 { font-size: 28px; margin-bottom: 28px; }
+
+    .contact-form h3 {
+      font-size: 28px;
+      margin-bottom: 28px;
+    }
+
     .contact-form textarea {
       width: 100%;
       padding: 14px 18px;
@@ -1041,14 +1631,24 @@
       min-height: 120px;
       transition: border-color 0.2s;
     }
-    .contact-form textarea:focus { border-color: var(--pink); }
+
+    .contact-form textarea:focus {
+      border-color: var(--pink);
+    }
+
     .form-success {
       display: none;
       text-align: center;
       padding: 40px 0;
     }
-    .form-success.show { display: block; }
-    .form-fields.hide { display: none; }
+
+    .form-success.show {
+      display: block;
+    }
+
+    .form-fields.hide {
+      display: none;
+    }
 
     /* ──────────────────────────────────
        FOOTER
@@ -1057,12 +1657,14 @@
       background: var(--warm-dark);
       padding: 60px 0 0;
     }
+
     .footer-grid {
       display: grid;
       grid-template-columns: 1.4fr 1fr 1fr 1fr;
       gap: 48px;
       margin-bottom: 48px;
     }
+
     .footer-brand .brand-name {
       font-family: 'Great Vibes', cursive;
       font-size: 38px;
@@ -1070,20 +1672,28 @@
       display: block;
       margin-bottom: 12px;
     }
-    .footer-brand p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.8; }
+
+    .footer-brand p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.55);
+      line-height: 1.8;
+    }
+
     .footer-col h5 {
       font-family: 'Jost', sans-serif;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.50);
+      color: rgba(255, 255, 255, 0.50);
       margin-bottom: 20px;
     }
-    .footer-col a, .footer-col p {
+
+    .footer-col a,
+    .footer-col p {
       display: block;
       font-size: 14px;
-      color: rgba(255,255,255,0.75);
+      color: rgba(255, 255, 255, 0.75);
       text-decoration: none;
       margin-bottom: 12px;
       transition: color 0.2s;
@@ -1094,737 +1704,1055 @@
       padding: 0;
       font-family: 'Jost', sans-serif;
     }
-    .footer-col a:hover { color: var(--pink-light); }
+
+    .footer-col a:hover {
+      color: var(--pink-light);
+    }
+
     .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.10);
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
       padding: 24px 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    .footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.35); margin: 0; }
+
+    .footer-bottom p {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.35);
+      margin: 0;
+    }
 
     /* Animations */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .fade-up { animation: fadeUp 0.7s ease forwards; }
-    .fade-up-delay-1 { animation-delay: 0.1s; opacity: 0; }
-    .fade-up-delay-2 { animation-delay: 0.2s; opacity: 0; }
-    .fade-up-delay-3 { animation-delay: 0.3s; opacity: 0; }
-    .fade-up-delay-4 { animation-delay: 0.4s; opacity: 0; }
+
+    .fade-up {
+      animation: fadeUp 0.7s ease forwards;
+    }
+
+    .fade-up-delay-1 {
+      animation-delay: 0.1s;
+      opacity: 0;
+    }
+
+    .fade-up-delay-2 {
+      animation-delay: 0.2s;
+      opacity: 0;
+    }
+
+    .fade-up-delay-3 {
+      animation-delay: 0.3s;
+      opacity: 0;
+    }
+
+    .fade-up-delay-4 {
+      animation-delay: 0.4s;
+      opacity: 0;
+    }
 
     /* ──────────────────────────────────
        RESPONSIVE
     ─────────────────────────────────── */
     @media (max-width: 1024px) {
-      .hero-left { padding: 120px 40px 80px 48px; }
-      .usp-grid, .testimonial-cards { grid-template-columns: 1fr 1fr; }
-      .services-grid { grid-template-columns: 1fr 1fr; }
-      .products-grid { grid-template-columns: 1fr 1fr; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-      .owner-grid { grid-template-columns: 1fr 1fr; }
+      .hero-left {
+        padding: 120px 40px 80px 48px;
+      }
+
+      .usp-grid,
+      .testimonial-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .owner-grid {
+        grid-template-columns: 1fr 1fr;
+      }
     }
+
     @media (max-width: 768px) {
-      #hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-right { height: 55vw; min-height: 280px; }
-      .hero-left { padding: 100px 28px 60px; }
-      .scroll-indicator { left: 28px; }
-      .nav-links { display: none; }
-      .hamburger { display: flex; }
-      .usp-grid, .testimonial-cards, .services-grid, .products-grid, .gallery-strip { grid-template-columns: 1fr; }
-      .about-grid, .owner-grid, .contact-grid { grid-template-columns: 1fr; }
-      .about-accent-box { bottom: 16px; right: 16px; }
-      .process-steps { grid-template-columns: 1fr 1fr; }
-      .process-steps::before { display: none; }
-      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
-      .cart-sidebar { width: 100%; right: -100%; }
-      .modal { padding: 32px 24px; }
-      .contact-form { padding: 32px 24px; }
+
+      /* Hero */
+      #hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .hero-right {
+        height: 60vw;
+        min-height: 260px;
+        order: -1;
+      }
+
+      .hero-left {
+        padding: 80px 24px 48px;
+      }
+
+      .hero-left h1 {
+        font-size: clamp(36px, 9vw, 56px);
+      }
+
+      .hero-left p {
+        font-size: 15px;
+        margin-bottom: 32px;
+      }
+
+      .hero-ctas {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .hero-ctas .btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .scroll-indicator {
+        display: none;
+      }
+
+      /* Nav */
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-cart {
+        padding: 9px 16px;
+        font-size: 11px;
+      }
+
+      /* Mobile menu: add cart */
+      .mobile-menu {
+        gap: 24px;
+        padding: 80px 32px 40px;
+      }
+
+      .mobile-menu a {
+        font-size: 32px;
+      }
+
+      .mobile-menu-cart {
+        margin-top: 8px;
+        background: var(--pink);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        padding: 14px 40px;
+        font-family: 'Jost', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      /* Sections */
+      .section {
+        padding: 60px 0;
+      }
+
+      .section-sm {
+        padding: 40px 0;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      /* Grids */
+      .usp-grid,
+      .testimonial-cards,
+      .services-grid,
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-strip {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .owner-grid {
+        grid-template-columns: 1fr;
+      }
+
+      /* About accent box */
+      .about-accent-box {
+        position: static;
+        margin-top: 16px;
+        display: inline-block;
+        border-radius: 12px;
+      }
+
+      .about-img-wrap {
+        text-align: center;
+      }
+
+      /* Process */
+      .process-steps {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .process-steps::before {
+        display: none;
+      }
+
+      /* Footer */
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+
+      /* Cart & Modal */
+      .cart-sidebar {
+        width: 100%;
+        right: -100%;
+      }
+
+      .modal {
+        padding: 32px 20px;
+        width: 95%;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form {
+        padding: 28px 20px;
+      }
+
+      /* Buttons: ensure tap-friendly size */
+      .btn {
+        padding: 14px 28px;
+        min-height: 48px;
+      }
+
+      .filter-btn {
+        padding: 10px 18px;
+        min-height: 44px;
+      }
+
+      .add-to-cart {
+        padding: 12px 16px;
+        min-height: 44px;
+      }
+
+      /* Social links */
+      .social-links {
+        flex-wrap: wrap;
+      }
+
+      /* Service & product cards */
+      .service-card-img {
+        height: 180px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-right {
+        height: 70vw;
+      }
+
+      .hero-left h1 {
+        font-size: clamp(32px, 10vw, 48px);
+      }
+
+      .gallery-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .usp-card {
+        padding: 28px 20px;
+      }
+
+      .t-card {
+        padding: 24px 20px;
+      }
+
+      h2 {
+        font-size: clamp(28px, 8vw, 40px);
+      }
+
+      .about-hero,
+      .services-hero,
+      .contact-hero,
+      .shop-hero {
+        padding-top: 120px;
+      }
+
+      .mobile-menu a {
+        font-size: 28px;
+      }
+
+      .nav-brand {
+        font-size: 26px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<!-- ─── NAVBAR ─────────────────────────────── -->
-<nav id="navbar">
-  <div class="nav-inner">
-    <a class="nav-brand" onclick="navigate('home')">Therapic Beauty</a>
-    <ul class="nav-links">
-      <li><a onclick="navigate('home')" id="nav-home" class="active">Home</a></li>
-      <li><a onclick="navigate('about')" id="nav-about">About</a></li>
-      <li><a onclick="navigate('services')" id="nav-services">Training</a></li>
-      <li><a onclick="navigate('shop')" id="nav-shop">Shop</a></li>
-      <li><a onclick="navigate('contact')" id="nav-contact">Contact</a></li>
-    </ul>
-    <button class="nav-cart" onclick="openCart()">
-      🛒 Cart
-      <span class="cart-badge" id="cartBadge">0</span>
-    </button>
-    <button class="hamburger" onclick="toggleMobileMenu()" id="hamburgerBtn">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+  <!-- ─── NAVBAR ─────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-brand" onclick="navigate('home')">Therapic Beauty</a>
+      <ul class="nav-links">
+        <li><a onclick="navigate('home')" id="nav-home" class="active">Home</a></li>
+        <li><a onclick="navigate('about')" id="nav-about">About</a></li>
+        <li><a onclick="navigate('services')" id="nav-services">Training</a></li>
+        <li><a onclick="navigate('shop')" id="nav-shop">Shop</a></li>
+        <li><a onclick="navigate('contact')" id="nav-contact">Contact</a></li>
+      </ul>
+      <button class="nav-cart" onclick="openCart()">
+        🛒 Cart
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <button class="hamburger" onclick="toggleMobileMenu()" id="hamburgerBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-<!-- Mobile Menu -->
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-close" onclick="toggleMobileMenu()">✕</button>
-  <a onclick="navigate('home'); toggleMobileMenu()">Home</a>
-  <a onclick="navigate('about'); toggleMobileMenu()">About</a>
-  <a onclick="navigate('services'); toggleMobileMenu()">Training</a>
-  <a onclick="navigate('shop'); toggleMobileMenu()">Shop</a>
-  <a onclick="navigate('contact'); toggleMobileMenu()">Contact</a>
-</div>
-
-<!-- ─── CART SIDEBAR ───────────────────────── -->
-<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
-<div class="cart-sidebar" id="cartSidebar">
-  <div class="cart-header">
-    <h3 class="display">Your Cart</h3>
-    <button class="cart-close" onclick="closeCart()">✕</button>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="toggleMobileMenu()">✕</button>
+    <a onclick="navigate('home'); toggleMobileMenu()">Home</a>
+    <a onclick="navigate('about'); toggleMobileMenu()">About</a>
+    <a onclick="navigate('services'); toggleMobileMenu()">Training</a>
+    <a onclick="navigate('shop'); toggleMobileMenu()">Shop</a>
+    <a onclick="navigate('contact'); toggleMobileMenu()">Contact</a>
   </div>
-  <div class="cart-items" id="cartItems">
-    <div class="cart-empty">
-      <div style="font-size:48px">🛍️</div>
-      <p>Your cart is empty.<br>Shop our beautiful lash collection!</p>
+
+  <!-- ─── CART SIDEBAR ───────────────────────── -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3 class="display">Your Cart</h3>
+      <button class="cart-close" onclick="closeCart()">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <div style="font-size:48px">🛍️</div>
+        <p>Your cart is empty.<br>Shop our beautiful lash collection!</p>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span class="cart-total-amount" id="cartTotal">R0</span>
+      </div>
+      <button class="btn btn-primary" style="width:100%" onclick="openCheckout()">Proceed to Checkout</button>
     </div>
   </div>
-  <div class="cart-footer">
-    <div class="cart-total">
-      <span>Total</span>
-      <span class="cart-total-amount" id="cartTotal">R0</span>
-    </div>
-    <button class="btn btn-primary" style="width:100%" onclick="openCheckout()">Proceed to Checkout</button>
-  </div>
-</div>
 
-<!-- ─── CHECKOUT MODAL ─────────────────────── -->
-<div class="modal-overlay" id="checkoutModal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeCheckout()">✕</button>
-    <div id="checkoutForm">
-      <h3 class="display">Checkout</h3>
-      <div class="form-group">
-        <label>Full Name</label>
-        <input type="text" placeholder="Your full name" id="ckName"/>
-      </div>
-      <div class="form-group">
-        <label>Email Address</label>
-        <input type="email" placeholder="your@email.com" id="ckEmail"/>
-      </div>
-      <div class="form-group">
-        <label>Phone Number</label>
-        <input type="tel" placeholder="+27 XX XXX XXXX" id="ckPhone"/>
-      </div>
-      <div class="form-group">
-        <label>Delivery Address</label>
-        <input type="text" placeholder="Street address, City, Province" id="ckAddress"/>
-      </div>
-      <div class="form-row">
+  <!-- ─── CHECKOUT MODAL ─────────────────────── -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeCheckout()">✕</button>
+      <div id="checkoutForm">
+        <h3 class="display">Checkout</h3>
         <div class="form-group">
-          <label>Province</label>
-          <select id="ckProvince">
-            <option>Gauteng</option>
-            <option>Western Cape</option>
-            <option>KwaZulu-Natal</option>
-            <option>Eastern Cape</option>
-            <option>Limpopo</option>
-            <option>Mpumalanga</option>
-            <option>North West</option>
-            <option>Northern Cape</option>
-            <option>Free State</option>
-          </select>
+          <label>Full Name</label>
+          <input type="text" placeholder="Your full name" id="ckName" />
         </div>
         <div class="form-group">
-          <label>Postal Code</label>
-          <input type="text" placeholder="0000" id="ckPostal"/>
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com" id="ckEmail" />
         </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+27 XX XXX XXXX" id="ckPhone" />
+        </div>
+        <div class="form-group">
+          <label>Delivery Address</label>
+          <input type="text" placeholder="Street address, City, Province" id="ckAddress" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Province</label>
+            <select id="ckProvince">
+              <option>Gauteng</option>
+              <option>Western Cape</option>
+              <option>KwaZulu-Natal</option>
+              <option>Eastern Cape</option>
+              <option>Limpopo</option>
+              <option>Mpumalanga</option>
+              <option>North West</option>
+              <option>Northern Cape</option>
+              <option>Free State</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Postal Code</label>
+            <input type="text" placeholder="0000" id="ckPostal" />
+          </div>
+        </div>
+        <div class="payment-note">
+          <span>💳</span>
+          <div>After placing your order, you will receive an EFT payment link or PayFast link via WhatsApp/Email within
+            2 hours. Delivery within 3–5 business days.</div>
+        </div>
+        <button class="btn btn-primary" style="width:100%" onclick="placeOrder()">Place Order</button>
       </div>
-      <div class="payment-note">
-        <span>💳</span>
-        <div>After placing your order, you will receive an EFT payment link or PayFast link via WhatsApp/Email within 2 hours. Delivery within 3–5 business days.</div>
+      <div class="order-success" id="orderSuccess" style="display:none">
+        <div class="success-icon">🌸</div>
+        <h3 class="display">Order Received!</h3>
+        <p style="margin:12px 0 24px">Thank you for your order! Nonhlanhla will be in touch via WhatsApp or email within
+          2 hours to confirm payment details.</p>
+        <button class="btn btn-fawn" onclick="closeCheckout(); clearCart()">Continue Shopping</button>
       </div>
-      <button class="btn btn-primary" style="width:100%" onclick="placeOrder()">Place Order</button>
-    </div>
-    <div class="order-success" id="orderSuccess" style="display:none">
-      <div class="success-icon">🌸</div>
-      <h3 class="display">Order Received!</h3>
-      <p style="margin:12px 0 24px">Thank you for your order! Nonhlanhla will be in touch via WhatsApp or email within 2 hours to confirm payment details.</p>
-      <button class="btn btn-fawn" onclick="closeCheckout(); clearCart()">Continue Shopping</button>
     </div>
   </div>
-</div>
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      PAGE: HOME
 ════════════════════════════════════════════ -->
-<div id="page-home" class="page active">
+  <div id="page-home" class="page active">
 
-  <!-- Hero -->
-  <section id="hero">
-    <div class="hero-left">
-      <span class="script-accent">Welcome to</span>
-      <h1 class="fade-up">Build Your<br><em>Beauty Empire</em></h1>
-      <p class="fade-up fade-up-delay-1">
-        Therapic Beauty empowers young women across South Africa to turn their passion for beauty into thriving businesses — through expert training and premium lash products.
-      </p>
-      <div class="hero-ctas fade-up fade-up-delay-2">
-        <button class="btn btn-primary" onclick="navigate('services')">Start Your Journey</button>
-        <button class="btn btn-outline" onclick="navigate('shop')">Shop Now</button>
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-left">
+        <span class="script-accent">Welcome to</span>
+        <h1 class="fade-up">Build Your<br><em>Beauty Empire</em></h1>
+        <p class="fade-up fade-up-delay-1">
+          Therapic Beauty empowers young women across South Africa to turn their passion for beauty into thriving
+          businesses — through expert training and premium lash products.
+        </p>
+        <div class="hero-ctas fade-up fade-up-delay-2">
+          <button class="btn btn-primary" onclick="navigate('services')">Start Your Journey</button>
+          <button class="btn btn-outline" onclick="navigate('shop')">Shop Now</button>
+        </div>
+        <div class="scroll-indicator">
+          <span class="scroll-line"></span>
+          <span>Scroll to explore</span>
+        </div>
       </div>
-      <div class="scroll-indicator">
-        <span class="scroll-line"></span>
-        <span>Scroll to explore</span>
+      <div class="hero-right">
+        <img src="hero-therapic-beauty.jpeg" alt="Therapic Beauty" class="hero-img" />
+      </div>
+      <div class="hero-decor"></div>
+      <div class="hero-decor-2"></div>
+    </section>
+
+    <!-- Brand Strip -->
+    <div class="brand-strip">
+      <div class="strip-inner">
+        <span class="strip-item">Empowering Women</span>
+        <span class="strip-item">Premium Lash Products</span>
+        <span class="strip-item">Beauty Education</span>
+        <span class="strip-item">Fourways, South Africa</span>
+        <span class="strip-item">Build Your Business</span>
+        <span class="strip-item">Empowering Women</span>
+        <span class="strip-item">Premium Lash Products</span>
+        <span class="strip-item">Beauty Education</span>
+        <span class="strip-item">Fourways, South Africa</span>
+        <span class="strip-item">Build Your Business</span>
       </div>
     </div>
-    <div class="hero-right">
-      <img src="hero-therapic-beauty.jpeg" alt="Therapic Beauty" class="hero-img"/>
-    </div>
-    <div class="hero-decor"></div>
-    <div class="hero-decor-2"></div>
-  </section>
 
-  <!-- Brand Strip -->
-  <div class="brand-strip">
-    <div class="strip-inner">
-      <span class="strip-item">Empowering Women</span>
-      <span class="strip-item">Premium Lash Products</span>
-      <span class="strip-item">Beauty Education</span>
-      <span class="strip-item">Fourways, South Africa</span>
-      <span class="strip-item">Build Your Business</span>
-      <span class="strip-item">Empowering Women</span>
-      <span class="strip-item">Premium Lash Products</span>
-      <span class="strip-item">Beauty Education</span>
-      <span class="strip-item">Fourways, South Africa</span>
-      <span class="strip-item">Build Your Business</span>
-    </div>
-  </div>
-
-  <!-- USP Section -->
-  <section class="section">
-    <div class="container">
-      <div class="text-center" style="margin-bottom:60px">
-        <span class="eyebrow">Why Choose Us</span>
-        <h2>More Than Beauty —<br><em style="color:var(--pink-deep)">It's Your Future</em></h2>
-      </div>
-      <div class="usp-grid">
-        <div class="usp-card fade-up">
-          <div class="usp-icon">✨</div>
-          <h4>Premium Training</h4>
-          <p>Learn lash application, business setup, and client management from an industry expert in a hands-on, practical environment.</p>
+    <!-- USP Section -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:60px">
+          <span class="eyebrow">Why Choose Us</span>
+          <h2>More Than Beauty —<br><em style="color:var(--pink-deep)">It's Your Future</em></h2>
         </div>
-        <div class="usp-card fade-up fade-up-delay-1">
-          <div class="usp-icon">💅</div>
-          <h4>Quality Products</h4>
-          <p>Curated lash kits and edge lash products designed to give your clients the most beautiful, long-lasting results every time.</p>
-        </div>
-        <div class="usp-card fade-up fade-up-delay-2">
-          <div class="usp-icon">💪</div>
-          <h4>Affordable & Accessible</h4>
-          <p>We believe every woman deserves the chance to build her own income. Our training and products are priced to make it possible.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section class="section-sm" style="background:var(--cream-dark)">
-    <div class="container">
-      <div class="text-center" style="margin-bottom:40px">
-        <span class="eyebrow">Gallery</span>
-        <h2>Behind the <em style="color:var(--pink-deep)">Brand</em></h2>
-      </div>
-      <div class="gallery-strip">
-        <!-- Replace each ph div with <img src="img2.jpeg" etc. alt="..." style="width:100%;height:100%;object-fit:cover"> -->
-        <div class="gallery-item">
-          <img src="gallery-treatment-1.jpeg" alt="Treatment 1" style="width:100%;height:100%;object-fit:cover">
-        </div>
-        <div class="gallery-item">
-          <img src="gallery-treatment-2.jpeg" alt="Treatment 2" style="width:100%;height:100%;object-fit:cover">
-        </div>
-        <div class="gallery-item">
-          <img src="gallery-treatment-3.jpeg" alt="Treatment 3" style="width:100%;height:100%;object-fit:cover">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="section testimonial-section">
-    <div class="container">
-      <div class="text-center" style="margin-bottom:56px">
-        <span class="eyebrow">Reviews</span>
-        <h2>Women Who <em style="color:var(--pink-deep)">Changed Their Lives</em></h2>
-      </div>
-      <div class="testimonial-cards">
-        <div class="t-card">
-          <div class="star-row">★★★★★</div>
-          <p>"After Therapic Beauty training I launched my own lash studio in just 3 months. Nonhlanhla teaches with so much heart and patience — I couldn't have done it without her!"</p>
-          <div class="t-author">
-            <div class="t-avatar">👩🏾</div>
-            <div>
-              <div class="t-name">Thandiwe M.</div>
-              <div class="t-role">Now owns her own lash studio, Soweto</div>
-            </div>
+        <div class="usp-grid">
+          <div class="usp-card fade-up">
+            <div class="usp-icon">✨</div>
+            <h4>Premium Training</h4>
+            <p>Learn lash application, business setup, and client management from an industry expert in a hands-on,
+              practical environment.</p>
           </div>
-        </div>
-        <div class="t-card">
-          <div class="star-row">★★★★★</div>
-          <p>"I was a stay-at-home mom with no income. Therapic Beauty changed everything. The training was practical, affordable and the products are absolutely stunning!"</p>
-          <div class="t-author">
-            <div class="t-avatar">👩🏽</div>
-            <div>
-              <div class="t-name">Lerato K.</div>
-              <div class="t-role">Beauty entrepreneur, Pretoria</div>
-            </div>
+          <div class="usp-card fade-up fade-up-delay-1">
+            <div class="usp-icon">💅</div>
+            <h4>Quality Products</h4>
+            <p>Curated lash kits and edge lash products designed to give your clients the most beautiful, long-lasting
+              results every time.</p>
           </div>
-        </div>
-        <div class="t-card">
-          <div class="star-row">★★★★★</div>
-          <p>"The lash kits are incredible quality for the price. My clients are obsessed and keep coming back. Ordering from Therapic Beauty is always smooth and fast."</p>
-          <div class="t-author">
-            <div class="t-avatar">👩🏼</div>
-            <div>
-              <div class="t-name">Megan van W.</div>
-              <div class="t-role">Lash technician, Johannesburg</div>
-            </div>
+          <div class="usp-card fade-up fade-up-delay-2">
+            <div class="usp-icon">💪</div>
+            <h4>Affordable & Accessible</h4>
+            <p>We believe every woman deserves the chance to build her own income. Our training and products are priced
+              to make it possible.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta-banner">
-    <div class="container" style="position:relative;z-index:1">
-      <span class="script" style="font-size:36px;color:rgba(255,255,255,0.70);display:block;margin-bottom:8px">Ready to begin?</span>
-      <h2>Your Beauty Business<br>Starts Today</h2>
-      <p>Join hundreds of women across South Africa who are building real income streams through the power of beauty.</p>
-      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-        <button class="btn btn-white" onclick="navigate('services')">Explore Training</button>
-        <button class="btn btn-outline" style="border-color:rgba(255,255,255,0.50);color:#fff" onclick="navigate('contact')">Get In Touch</button>
+    <!-- Gallery -->
+    <section class="section-sm" style="background:var(--cream-dark)">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:40px">
+          <span class="eyebrow">Gallery</span>
+          <h2>Behind the <em style="color:var(--pink-deep)">Brand</em></h2>
+        </div>
+        <div class="gallery-strip">
+          <!-- Replace each ph div with <img src="img2.jpeg" etc. alt="..." style="width:100%;height:100%;object-fit:cover"> -->
+          <div class="gallery-item">
+            <img src="gallery-treatment-1.jpeg" alt="Treatment 1" style="width:100%;height:100%;object-fit:cover">
+          </div>
+          <div class="gallery-item">
+            <img src="gallery-treatment-2.jpeg" alt="Treatment 2" style="width:100%;height:100%;object-fit:cover">
+          </div>
+          <div class="gallery-item">
+            <img src="gallery-treatment-3.jpeg" alt="Treatment 3" style="width:100%;height:100%;object-fit:cover">
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-</div><!-- /page-home -->
+    <!-- Testimonials -->
+    <section class="section testimonial-section">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:56px">
+          <span class="eyebrow">Reviews</span>
+          <h2>Women Who <em style="color:var(--pink-deep)">Changed Their Lives</em></h2>
+        </div>
+        <div class="testimonial-cards">
+          <div class="t-card">
+            <div class="star-row">★★★★★</div>
+            <p>"After Therapic Beauty training I launched my own lash studio in just 3 months. Nonhlanhla teaches with
+              so much heart and patience — I couldn't have done it without her!"</p>
+            <div class="t-author">
+              <div class="t-avatar">👩🏾</div>
+              <div>
+                <div class="t-name">Thandiwe M.</div>
+                <div class="t-role">Now owns her own lash studio, Soweto</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <div class="star-row">★★★★★</div>
+            <p>"I was a stay-at-home mom with no income. Therapic Beauty changed everything. The training was practical,
+              affordable and the products are absolutely stunning!"</p>
+            <div class="t-author">
+              <div class="t-avatar">👩🏽</div>
+              <div>
+                <div class="t-name">Lerato K.</div>
+                <div class="t-role">Beauty entrepreneur, Pretoria</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card">
+            <div class="star-row">★★★★★</div>
+            <p>"The lash kits are incredible quality for the price. My clients are obsessed and keep coming back.
+              Ordering from Therapic Beauty is always smooth and fast."</p>
+            <div class="t-author">
+              <div class="t-avatar">👩🏼</div>
+              <div>
+                <div class="t-name">Megan van W.</div>
+                <div class="t-role">Lash technician, Johannesburg</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container" style="position:relative;z-index:1">
+        <span class="script" style="font-size:36px;color:rgba(255,255,255,0.70);display:block;margin-bottom:8px">Ready
+          to begin?</span>
+        <h2>Your Beauty Business<br>Starts Today</h2>
+        <p>Join hundreds of women across South Africa who are building real income streams through the power of beauty.
+        </p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+          <button class="btn btn-white" onclick="navigate('services')">Explore Training</button>
+          <button class="btn btn-outline" style="border-color:rgba(255,255,255,0.50);color:#fff"
+            onclick="navigate('contact')">Get In Touch</button>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-home -->
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      PAGE: ABOUT
 ════════════════════════════════════════════ -->
-<div id="page-about" class="page">
+  <div id="page-about" class="page">
 
-  <section class="about-hero">
-    <div class="container text-center">
-      <span class="eyebrow">Our Story</span>
-      <h1>About <em style="color:var(--pink-deep)">Therapic Beauty</em></h1>
-    </div>
-  </section>
+    <section class="about-hero">
+      <div class="container text-center">
+        <span class="eyebrow">Our Story</span>
+        <h1>About <em style="color:var(--pink-deep)">Therapic Beauty</em></h1>
+      </div>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-img-wrap">
-          <div class="about-img-main">
-            <img src="about-therapic-beauty.jpeg" alt="Therapic Beauty"/>
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-img-wrap">
+            <div class="about-img-main">
+              <img src="about-therapic-beauty.jpeg" alt="Therapic Beauty" />
+            </div>
+            <div class="about-accent-box">
+              <span class="big-num">200+</span>
+              <span>Women Trained</span>
+            </div>
           </div>
-          <div class="about-accent-box">
-            <span class="big-num">200+</span>
-            <span>Women Trained</span>
+          <div class="about-content">
+            <span class="eyebrow">Our Mission</span>
+            <h2>Empowering Women Through the Art of Beauty</h2>
+            <p>Therapic Beauty was born from a deep desire to see young women thrive. We believe that every woman —
+              regardless of her background or starting point — deserves the tools, knowledge, and support to build a
+              business she is proud of.</p>
+            <p>Based in Fourways, Johannesburg, we serve women across South Africa with practical beauty education and
+              premium lash products that give them a real competitive edge in the industry.</p>
+            <ul class="values-list">
+              <li>
+                <span class="v-icon">🌸</span>
+                <span><strong>Inclusivity:</strong> Our community welcomes women of all backgrounds, races, and
+                  experience levels.</span>
+              </li>
+              <li>
+                <span class="v-icon">💡</span>
+                <span><strong>Education First:</strong> We don't just sell products — we give you the knowledge to use
+                  them professionally.</span>
+              </li>
+              <li>
+                <span class="v-icon">💰</span>
+                <span><strong>Affordability:</strong> Quality training and products should be accessible, not a
+                  luxury.</span>
+              </li>
+              <li>
+                <span class="v-icon">🤝</span>
+                <span><strong>Community:</strong> When you join Therapic Beauty, you join a sisterhood of empowered
+                  beauty entrepreneurs.</span>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="about-content">
-          <span class="eyebrow">Our Mission</span>
-          <h2>Empowering Women Through the Art of Beauty</h2>
-          <p>Therapic Beauty was born from a deep desire to see young women thrive. We believe that every woman — regardless of her background or starting point — deserves the tools, knowledge, and support to build a business she is proud of.</p>
-          <p>Based in Fourways, Johannesburg, we serve women across South Africa with practical beauty education and premium lash products that give them a real competitive edge in the industry.</p>
-          <ul class="values-list">
-            <li>
-              <span class="v-icon">🌸</span>
-              <span><strong>Inclusivity:</strong> Our community welcomes women of all backgrounds, races, and experience levels.</span>
-            </li>
-            <li>
-              <span class="v-icon">💡</span>
-              <span><strong>Education First:</strong> We don't just sell products — we give you the knowledge to use them professionally.</span>
-            </li>
-            <li>
-              <span class="v-icon">💰</span>
-              <span><strong>Affordability:</strong> Quality training and products should be accessible, not a luxury.</span>
-            </li>
-            <li>
-              <span class="v-icon">🤝</span>
-              <span><strong>Community:</strong> When you join Therapic Beauty, you join a sisterhood of empowered beauty entrepreneurs.</span>
-            </li>
-          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="owner-section section">
-    <div class="container">
-      <div class="owner-grid">
-        <div class="owner-photo">
-          <img src="owner-nonhlanhla-precious.jpeg" alt="Nonhlanhla Precious"/>
-        </div>
-        <div class="owner-content">
-          <span class="script-accent">Meet the founder</span>
-          <span class="eyebrow">Nonhlanhla Precious</span>
-          <h2>The Heart Behind Therapic Beauty</h2>
-          <p>Nonhlanhla Precious is a passionate beauty educator and entrepreneur based in Fourways, South Africa. She started Therapic Beauty with one vision: to be the bridge between a young woman's dream and her financial freedom.</p>
-          <p>Having navigated the beauty industry herself, Nonhlanhla understands the challenges women face when starting out — lack of guidance, expensive products, and no support system. That's exactly what Therapic Beauty solves.</p>
-          <p>Through hands-on training, honest mentorship, and high-quality products at fair prices, she has helped hundreds of women launch and grow their own beauty businesses.</p>
-          <div class="signature">Nonhlanhla Precious</div>
+    <section class="owner-section section">
+      <div class="container">
+        <div class="owner-grid">
+          <div class="owner-photo">
+            <img src="owner-nonhlanhla-precious.jpeg" alt="Nonhlanhla Precious" />
+          </div>
+          <div class="owner-content">
+            <span class="script-accent">Meet the founder</span>
+            <span class="eyebrow">Nonhlanhla Precious</span>
+            <h2>The Heart Behind Therapic Beauty</h2>
+            <p>Nonhlanhla Precious is a passionate beauty educator and entrepreneur based in Fourways, South Africa. She
+              started Therapic Beauty with one vision: to be the bridge between a young woman's dream and her financial
+              freedom.</p>
+            <p>Having navigated the beauty industry herself, Nonhlanhla understands the challenges women face when
+              starting out — lack of guidance, expensive products, and no support system. That's exactly what Therapic
+              Beauty solves.</p>
+            <p>Through hands-on training, honest mentorship, and high-quality products at fair prices, she has helped
+              hundreds of women launch and grow their own beauty businesses.</p>
+            <div class="signature">Nonhlanhla Precious</div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-</div><!-- /page-about -->
+  </div><!-- /page-about -->
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      PAGE: SERVICES / TRAINING
 ════════════════════════════════════════════ -->
-<div id="page-services" class="page">
+  <div id="page-services" class="page">
 
-  <section class="services-hero">
-    <div class="container">
-      <span class="eyebrow">Training & Education</span>
-      <h1>Start Your Beauty <em style="color:var(--pink-deep)">Journey</em></h1>
-      <p style="max-width:540px;margin:20px auto 0">Practical, affordable, and empowering — our training programmes are designed to take you from beginner to confident beauty business owner.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="services-grid">
-
-        <div class="service-card">
-          <div class="service-card-img">
-            💕
-            <span class="service-badge">Most Popular</span>
-          </div>
-          <div class="service-card-body">
-            <h3>Lash Basics Course</h3>
-            <p>The perfect starting point. Learn lash application fundamentals, hygiene, client prep, and aftercare in one powerful session.</p>
-            <span class="service-price">R850</span>
-            <ul class="service-includes">
-              <li>Full-day hands-on training</li>
-              <li>Lash starter kit included</li>
-              <li>Certificate of completion</li>
-              <li>WhatsApp support for 30 days</li>
-              <li>Small group setting (max 6 students)</li>
-            </ul>
-            <button class="btn btn-primary" style="width:100%" onclick="navigate('contact')">Book Now</button>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-card-img">
-            ✨
-            <span class="service-badge">Best Value</span>
-          </div>
-          <div class="service-card-body">
-            <h3>Business Starter Package</h3>
-            <p>Go beyond technique. Learn how to price your services, find clients, and run a profitable beauty business from day one.</p>
-            <span class="service-price">R1,500</span>
-            <ul class="service-includes">
-              <li>2-day intensive training</li>
-              <li>Full lash kit + edge lash products</li>
-              <li>Business planning session</li>
-              <li>Social media strategy guide</li>
-              <li>60-day WhatsApp mentorship</li>
-              <li>Branded certificate</li>
-            </ul>
-            <button class="btn btn-primary" style="width:100%" onclick="navigate('contact')">Book Now</button>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-card-img">
-            👑
-          </div>
-          <div class="service-card-body">
-            <h3>Advanced Lash Mastery</h3>
-            <p>For trained technicians ready to level up. Master volume lashes, mega volume, and hybrid sets that command premium pricing.</p>
-            <span class="service-price">R2,200</span>
-            <ul class="service-includes">
-              <li>Advanced techniques: volume & hybrid</li>
-              <li>Practice mannequin included</li>
-              <li>Professional product kit</li>
-              <li>Business pricing strategy session</li>
-              <li>90-day mentorship access</li>
-              <li>Advanced practitioner certificate</li>
-            </ul>
-            <button class="btn btn-primary" style="width:100%" onclick="navigate('contact')">Book Now</button>
-          </div>
-        </div>
-
+    <section class="services-hero">
+      <div class="container">
+        <span class="eyebrow">Training & Education</span>
+        <h1>Start Your Beauty <em style="color:var(--pink-deep)">Journey</em></h1>
+        <p style="max-width:540px;margin:20px auto 0">Practical, affordable, and empowering — our training programmes
+          are designed to take you from beginner to confident beauty business owner.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- How It Works -->
-  <section class="process-section section">
-    <div class="container">
-      <div class="text-center" style="margin-bottom:60px">
-        <span class="eyebrow">How It Works</span>
-        <h2>From Booking to <em style="color:var(--pink-deep)">Business Owner</em></h2>
-      </div>
-      <div class="process-steps">
-        <div class="process-step">
-          <div class="step-num">1</div>
-          <h4>Choose Your Course</h4>
-          <p>Pick the training package that matches where you are right now and where you want to go.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">2</div>
-          <h4>Book & Confirm</h4>
-          <p>Contact Nonhlanhla via WhatsApp or email to choose your date and secure your spot with a small deposit.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">3</div>
-          <h4>Train & Learn</h4>
-          <p>Attend your hands-on training session in Fourways and walk away with real skills and confidence.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">4</div>
-          <h4>Launch & Earn</h4>
-          <p>Start your beauty business, supported by your community and ongoing WhatsApp mentorship access.</p>
+    <section class="section">
+      <div class="container">
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="service-card-img">
+              💕
+              <span class="service-badge">Most Popular</span>
+            </div>
+            <div class="service-card-body">
+              <h3>Lash Basics Course</h3>
+              <p>The perfect starting point. Learn lash application fundamentals, hygiene, client prep, and aftercare in
+                one powerful session.</p>
+              <span class="service-price">R850</span>
+              <ul class="service-includes">
+                <li>Full-day hands-on training</li>
+                <li>Lash starter kit included</li>
+                <li>Certificate of completion</li>
+                <li>WhatsApp support for 30 days</li>
+                <li>Small group setting (max 6 students)</li>
+              </ul>
+              <button class="btn btn-primary" style="width:100%" onclick="navigate('contact')">Book Now</button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-img">
+              ✨
+              <span class="service-badge">Best Value</span>
+            </div>
+            <div class="service-card-body">
+              <h3>Business Starter Package</h3>
+              <p>Go beyond technique. Learn how to price your services, find clients, and run a profitable beauty
+                business from day one.</p>
+              <span class="service-price">R1,500</span>
+              <ul class="service-includes">
+                <li>2-day intensive training</li>
+                <li>Full lash kit + edge lash products</li>
+                <li>Business planning session</li>
+                <li>Social media strategy guide</li>
+                <li>60-day WhatsApp mentorship</li>
+                <li>Branded certificate</li>
+              </ul>
+              <button class="btn btn-primary" style="width:100%" onclick="navigate('contact')">Book Now</button>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-img">
+              👑
+            </div>
+            <div class="service-card-body">
+              <h3>Advanced Lash Mastery</h3>
+              <p>For trained technicians ready to level up. Master volume lashes, mega volume, and hybrid sets that
+                command premium pricing.</p>
+              <span class="service-price">R2,200</span>
+              <ul class="service-includes">
+                <li>Advanced techniques: volume & hybrid</li>
+                <li>Practice mannequin included</li>
+                <li>Professional product kit</li>
+                <li>Business pricing strategy session</li>
+                <li>90-day mentorship access</li>
+                <li>Advanced practitioner certificate</li>
+              </ul>
+              <button class="btn btn-primary" style="width:100%" onclick="navigate('contact')">Book Now</button>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FAQ -->
-  <section class="section" style="background:var(--cream-dark)">
-    <div class="container" style="max-width:720px">
-      <div class="text-center" style="margin-bottom:48px">
-        <span class="eyebrow">FAQs</span>
-        <h2>Common <em style="color:var(--pink-deep)">Questions</em></h2>
+    <!-- How It Works -->
+    <section class="process-section section">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:60px">
+          <span class="eyebrow">How It Works</span>
+          <h2>From Booking to <em style="color:var(--pink-deep)">Business Owner</em></h2>
+        </div>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-num">1</div>
+            <h4>Choose Your Course</h4>
+            <p>Pick the training package that matches where you are right now and where you want to go.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">2</div>
+            <h4>Book & Confirm</h4>
+            <p>Contact Nonhlanhla via WhatsApp or email to choose your date and secure your spot with a small deposit.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">3</div>
+            <h4>Train & Learn</h4>
+            <p>Attend your hands-on training session in Fourways and walk away with real skills and confidence.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">4</div>
+            <h4>Launch & Earn</h4>
+            <p>Start your beauty business, supported by your community and ongoing WhatsApp mentorship access.</p>
+          </div>
+        </div>
       </div>
-      <div id="faqList"></div>
-    </div>
-  </section>
+    </section>
 
-</div><!-- /page-services -->
+    <!-- FAQ -->
+    <section class="section" style="background:var(--cream-dark)">
+      <div class="container" style="max-width:720px">
+        <div class="text-center" style="margin-bottom:48px">
+          <span class="eyebrow">FAQs</span>
+          <h2>Common <em style="color:var(--pink-deep)">Questions</em></h2>
+        </div>
+        <div id="faqList"></div>
+      </div>
+    </section>
+
+  </div><!-- /page-services -->
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      PAGE: SHOP
 ════════════════════════════════════════════ -->
-<div id="page-shop" class="page">
+  <div id="page-shop" class="page">
 
-  <section class="shop-hero">
-    <div class="container">
-      <span class="eyebrow">The Collection</span>
-      <h1>Shop Premium <em style="color:var(--pink-deep)">Lash Products</em></h1>
-      <p style="max-width:480px;margin:20px auto 0">Professional-grade lash products at prices that make sense for your business and your budget.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="shop-filter">
-        <button class="filter-btn active" onclick="filterProducts('all', this)">All Products</button>
-        <button class="filter-btn" onclick="filterProducts('lash-kit', this)">Lash Kits</button>
-        <button class="filter-btn" onclick="filterProducts('edge-lash', this)">Edge Lash</button>
-        <button class="filter-btn" onclick="filterProducts('accessories', this)">Accessories</button>
+    <section class="shop-hero">
+      <div class="container">
+        <span class="eyebrow">The Collection</span>
+        <h1>Shop Premium <em style="color:var(--pink-deep)">Lash Products</em></h1>
+        <p style="max-width:480px;margin:20px auto 0">Professional-grade lash products at prices that make sense for
+          your business and your budget.</p>
       </div>
-      <div class="products-grid" id="productsGrid">
-        <!-- Rendered by JS -->
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="shop-filter">
+          <button class="filter-btn active" onclick="filterProducts('all', this)">All Products</button>
+          <button class="filter-btn" onclick="filterProducts('lash-kit', this)">Lash Kits</button>
+          <button class="filter-btn" onclick="filterProducts('edge-lash', this)">Edge Lash</button>
+          <button class="filter-btn" onclick="filterProducts('accessories', this)">Accessories</button>
+        </div>
+        <div class="products-grid" id="productsGrid">
+          <!-- Rendered by JS -->
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-</div><!-- /page-shop -->
+  </div><!-- /page-shop -->
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      PAGE: CONTACT
 ════════════════════════════════════════════ -->
-<div id="page-contact" class="page">
+  <div id="page-contact" class="page">
 
-  <section class="contact-hero">
-    <div class="container">
-      <span class="eyebrow">Get In Touch</span>
-      <h1>Let's <em style="color:var(--pink-deep)">Connect</em></h1>
-      <p style="max-width:480px;margin:20px auto 0">Whether you want to book training, ask about products, or just say hello — we'd love to hear from you.</p>
-    </div>
-  </section>
+    <section class="contact-hero">
+      <div class="container">
+        <span class="eyebrow">Get In Touch</span>
+        <h1>Let's <em style="color:var(--pink-deep)">Connect</em></h1>
+        <p style="max-width:480px;margin:20px auto 0">Whether you want to book training, ask about products, or just say
+          hello — we'd love to hear from you.</p>
+      </div>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="contact-grid">
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
 
-        <div class="contact-info">
-          <h3>Reach Out Directly</h3>
-          <p>Nonhlanhla is always happy to chat, answer questions, and help you find the right path forward. Don't be shy!</p>
+          <div class="contact-info">
+            <h3>Reach Out Directly</h3>
+            <p>Nonhlanhla is always happy to chat, answer questions, and help you find the right path forward. Don't be
+              shy!</p>
 
-          <a class="contact-item" href="tel:+27000000000">
-            <div class="contact-icon">📞</div>
-            <div class="contact-item-text">
-              <strong>Phone / WhatsApp</strong>
-              <span>+27 000 000 0000</span>
-            </div>
-          </a>
-
-          <a class="contact-item" href="mailto:hello@therapicbeauty.co.za">
-            <div class="contact-icon">✉️</div>
-            <div class="contact-item-text">
-              <strong>Email</strong>
-              <span>hello@therapicbeauty.co.za</span>
-            </div>
-          </a>
-
-          <a class="contact-item" href="#" onclick="return false">
-            <div class="contact-icon">📍</div>
-            <div class="contact-item-text">
-              <strong>Location</strong>
-              <span>Fourways, Johannesburg, South Africa</span>
-            </div>
-          </a>
-
-          <div class="social-links">
-            <a class="social-btn" href="https://www.instagram.com/therapic_beauty" target="_blank">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-              @therapic_beauty
+            <a class="contact-item" href="tel:+27000000000">
+              <div class="contact-icon">📞</div>
+              <div class="contact-item-text">
+                <strong>Phone / WhatsApp</strong>
+                <span>+27 000 000 0000</span>
+              </div>
             </a>
+
+            <a class="contact-item" href="mailto:hello@therapicbeauty.co.za">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-item-text">
+                <strong>Email</strong>
+                <span>hello@therapicbeauty.co.za</span>
+              </div>
+            </a>
+
+            <a class="contact-item" href="#" onclick="return false">
+              <div class="contact-icon">📍</div>
+              <div class="contact-item-text">
+                <strong>Location</strong>
+                <span>Fourways, Johannesburg, South Africa</span>
+              </div>
+            </a>
+
+            <div class="social-links">
+              <a class="social-btn" href="https://www.instagram.com/therapic_beauty" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                </svg>
+                @therapic_beauty
+              </a>
+            </div>
           </div>
+
+          <div class="contact-form">
+            <h3>Send a Message</h3>
+            <div id="contactFormFields" class="form-fields">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" id="cfName" placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="cfEmail" placeholder="your@email.com" />
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="cfPhone" placeholder="+27 XX XXX XXXX" />
+              </div>
+              <div class="form-group">
+                <label>I'm Interested In</label>
+                <select id="cfSubject">
+                  <option>Lash Basics Course</option>
+                  <option>Business Starter Package</option>
+                  <option>Advanced Lash Mastery</option>
+                  <option>Ordering Lash Products</option>
+                  <option>General Enquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea id="cfMessage"
+                  placeholder="Tell us a bit about yourself and what you're looking for…"></textarea>
+              </div>
+              <button class="btn btn-primary" style="width:100%" onclick="submitContactForm()">Send Message 💌</button>
+            </div>
+            <div class="form-success" id="formSuccess">
+              <div style="font-size:56px;margin-bottom:16px">🌸</div>
+              <h3 class="display" style="color:var(--pink-deep);margin-bottom:12px">Message Sent!</h3>
+              <p>Thank you for reaching out! Nonhlanhla will reply within 24 hours via WhatsApp or email. We can't wait
+                to help you start your journey.</p>
+              <button class="btn btn-fawn" style="margin-top:24px" onclick="resetContactForm()">Send Another</button>
+            </div>
+          </div>
+
         </div>
+      </div>
+    </section>
 
-        <div class="contact-form">
-          <h3>Send a Message</h3>
-          <div id="contactFormFields" class="form-fields">
-            <div class="form-group">
-              <label>Your Name</label>
-              <input type="text" id="cfName" placeholder="Your full name"/>
-            </div>
-            <div class="form-group">
-              <label>Email Address</label>
-              <input type="email" id="cfEmail" placeholder="your@email.com"/>
-            </div>
-            <div class="form-group">
-              <label>Phone Number</label>
-              <input type="tel" id="cfPhone" placeholder="+27 XX XXX XXXX"/>
-            </div>
-            <div class="form-group">
-              <label>I'm Interested In</label>
-              <select id="cfSubject">
-                <option>Lash Basics Course</option>
-                <option>Business Starter Package</option>
-                <option>Advanced Lash Mastery</option>
-                <option>Ordering Lash Products</option>
-                <option>General Enquiry</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Message</label>
-              <textarea id="cfMessage" placeholder="Tell us a bit about yourself and what you're looking for…"></textarea>
-            </div>
-            <button class="btn btn-primary" style="width:100%" onclick="submitContactForm()">Send Message 💌</button>
-          </div>
-          <div class="form-success" id="formSuccess">
-            <div style="font-size:56px;margin-bottom:16px">🌸</div>
-            <h3 class="display" style="color:var(--pink-deep);margin-bottom:12px">Message Sent!</h3>
-            <p>Thank you for reaching out! Nonhlanhla will reply within 24 hours via WhatsApp or email. We can't wait to help you start your journey.</p>
-            <button class="btn btn-fawn" style="margin-top:24px" onclick="resetContactForm()">Send Another</button>
-          </div>
+  </div><!-- /page-contact -->
+
+
+  <!-- ─── FOOTER ──────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-name">Therapic Beauty</span>
+          <p>Empowering young women across South Africa to build beautiful, profitable beauty businesses through expert
+            training and premium lash products.</p>
+          <p style="margin-top:16px;color:rgba(255,255,255,0.35)">📍 Fourways, Johannesburg, South Africa</p>
         </div>
-
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <a onclick="navigate('home')">Home</a>
+          <a onclick="navigate('about')">About Us</a>
+          <a onclick="navigate('services')">Training</a>
+          <a onclick="navigate('shop')">Shop</a>
+          <a onclick="navigate('contact')">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Training</h5>
+          <a onclick="navigate('services')">Lash Basics Course</a>
+          <a onclick="navigate('services')">Business Starter Package</a>
+          <a onclick="navigate('services')">Advanced Lash Mastery</a>
+          <a onclick="navigate('contact')">Book a Session</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <p>📞 +27 000 000 0000</p>
+          <p>✉️ hello@therapicbeauty.co.za</p>
+          <a href="https://www.instagram.com/therapic_beauty" target="_blank" style="color:rgba(255,255,255,0.75)">📸
+            @therapic_beauty</a>
+        </div>
       </div>
     </div>
-  </section>
-
-</div><!-- /page-contact -->
-
-
-<!-- ─── FOOTER ──────────────────────────────── -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <span class="brand-name">Therapic Beauty</span>
-        <p>Empowering young women across South Africa to build beautiful, profitable beauty businesses through expert training and premium lash products.</p>
-        <p style="margin-top:16px;color:rgba(255,255,255,0.35)">📍 Fourways, Johannesburg, South Africa</p>
-      </div>
-      <div class="footer-col">
-        <h5>Navigate</h5>
-        <a onclick="navigate('home')">Home</a>
-        <a onclick="navigate('about')">About Us</a>
-        <a onclick="navigate('services')">Training</a>
-        <a onclick="navigate('shop')">Shop</a>
-        <a onclick="navigate('contact')">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h5>Training</h5>
-        <a onclick="navigate('services')">Lash Basics Course</a>
-        <a onclick="navigate('services')">Business Starter Package</a>
-        <a onclick="navigate('services')">Advanced Lash Mastery</a>
-        <a onclick="navigate('contact')">Book a Session</a>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <p>📞 +27 000 000 0000</p>
-        <p>✉️ hello@therapicbeauty.co.za</p>
-        <a href="https://www.instagram.com/therapic_beauty" target="_blank" style="color:rgba(255,255,255,0.75)">📸 @therapic_beauty</a>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2025 Therapic Beauty. All rights reserved. Owned by Nonhlanhla Precious.</p>
+        <p>Made with 💕 in Fourways, South Africa</p>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="footer-bottom">
-      <p>© 2025 Therapic Beauty. All rights reserved. Owned by Nonhlanhla Precious.</p>
-      <p>Made with 💕 in Fourways, South Africa</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 
-<script>
-// ─── NAVIGATION ────────────────────────────────────────────────
-function navigate(page) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + page).classList.add('active');
-  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-  const navEl = document.getElementById('nav-' + page);
-  if (navEl) navEl.classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  if (page === 'shop') renderProducts('all');
-}
+  <script>
+    // ─── NAVIGATION ────────────────────────────────────────────────
+    function navigate(page) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById('page-' + page).classList.add('active');
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+      const navEl = document.getElementById('nav-' + page);
+      if (navEl) navEl.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (page === 'shop') renderProducts('all');
+    }
 
-// ─── NAVBAR SCROLL ─────────────────────────────────────────────
-window.addEventListener('scroll', () => {
-  const nav = document.getElementById('navbar');
-  if (window.scrollY > 60) nav.classList.add('scrolled');
-  else nav.classList.remove('scrolled');
-});
+    // ─── NAVBAR SCROLL ─────────────────────────────────────────────
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 60) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    });
 
-// ─── MOBILE MENU ───────────────────────────────────────────────
-function toggleMobileMenu() {
-  document.getElementById('mobileMenu').classList.toggle('open');
-}
+    // ─── MOBILE MENU ───────────────────────────────────────────────
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
 
-// ─── PRODUCTS DATA ─────────────────────────────────────────────
-const products = [
-  { id:1, name:'Classic Lash Starter Kit', category:'lash-kit', price:420, icon:'💕', tag:'Best Seller', description:'Everything you need to start applying beautiful classic lash sets. Includes 8 mixed trays, lash glue, tweezers & guide.' },
-  { id:2, name:'Volume Lash Pro Kit', category:'lash-kit', price:680, icon:'✨', tag:'', description:'Professional-grade volume lash kit for creating stunning full volume and mega volume sets. Includes 12 trays & pro tools.' },
-  { id:3, name:'Edge Lash Kit – Natural', category:'edge-lash', price:280, icon:'🌿', tag:'', description:'Achieve a seamless, natural baby-hair effect. Includes edge lash strips, edge glue, and application brush.' },
-  { id:4, name:'Edge Lash Kit – Glam', category:'edge-lash', price:320, icon:'💫', tag:'New Arrival', description:'Bold, dramatic edge lashes for special occasions and events. Includes glam strips, mega-hold gel, and styling tools.' },
-  { id:5, name:'Lash Glue – Extra Hold', category:'accessories', price:95, icon:'🔒', tag:'', description:'Medical-grade, hypoallergenic lash adhesive with 6-week hold. Suitable for sensitive eyes. Black formulation.' },
-  { id:6, name:'Complete Business Kit', category:'lash-kit', price:1200, icon:'👑', tag:'Bundle Deal', description:'The ultimate all-in-one kit for new lash businesses. Includes classic + volume trays, 3 glues, tweezers, under-eye pads & more.' },
-];
+    // ─── PRODUCTS DATA ─────────────────────────────────────────────
+    const products = [
+      { id: 1, name: 'Classic Lash Starter Kit', category: 'lash-kit', price: 420, icon: '💕', tag: 'Best Seller', description: 'Everything you need to start applying beautiful classic lash sets. Includes 8 mixed trays, lash glue, tweezers & guide.' },
+      { id: 2, name: 'Volume Lash Pro Kit', category: 'lash-kit', price: 680, icon: '✨', tag: '', description: 'Professional-grade volume lash kit for creating stunning full volume and mega volume sets. Includes 12 trays & pro tools.' },
+      { id: 3, name: 'Edge Lash Kit – Natural', category: 'edge-lash', price: 280, icon: '🌿', tag: '', description: 'Achieve a seamless, natural baby-hair effect. Includes edge lash strips, edge glue, and application brush.' },
+      { id: 4, name: 'Edge Lash Kit – Glam', category: 'edge-lash', price: 320, icon: '💫', tag: 'New Arrival', description: 'Bold, dramatic edge lashes for special occasions and events. Includes glam strips, mega-hold gel, and styling tools.' },
+      { id: 5, name: 'Lash Glue – Extra Hold', category: 'accessories', price: 95, icon: '🔒', tag: '', description: 'Medical-grade, hypoallergenic lash adhesive with 6-week hold. Suitable for sensitive eyes. Black formulation.' },
+      { id: 6, name: 'Complete Business Kit', category: 'lash-kit', price: 1200, icon: '👑', tag: 'Bundle Deal', description: 'The ultimate all-in-one kit for new lash businesses. Includes classic + volume trays, 3 glues, tweezers, under-eye pads & more.' },
+    ];
 
-let cart = [];
+    let cart = [];
 
-function renderProducts(filter) {
-  const grid = document.getElementById('productsGrid');
-  const filtered = filter === 'all' ? products : products.filter(p => p.category === filter);
-  grid.innerHTML = filtered.map(p => `
+    function renderProducts(filter) {
+      const grid = document.getElementById('productsGrid');
+      const filtered = filter === 'all' ? products : products.filter(p => p.category === filter);
+      grid.innerHTML = filtered.map(p => `
     <div class="product-card">
       <div class="product-img">
         <div class="product-ph">${p.icon}</div>
@@ -1840,40 +2768,40 @@ function renderProducts(filter) {
       </div>
     </div>
   `).join('');
-}
+    }
 
-function filterProducts(filter, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  renderProducts(filter);
-}
+    function filterProducts(filter, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderProducts(filter);
+    }
 
-// ─── CART ──────────────────────────────────────────────────────
-function addToCart(productId) {
-  const product = products.find(p => p.id === productId);
-  const existing = cart.find(i => i.id === productId);
-  if (existing) existing.qty++;
-  else cart.push({ ...product, qty: 1 });
-  updateCartUI();
-  openCart();
-  showToast(product.name + ' added to cart! 💕');
-}
+    // ─── CART ──────────────────────────────────────────────────────
+    function addToCart(productId) {
+      const product = products.find(p => p.id === productId);
+      const existing = cart.find(i => i.id === productId);
+      if (existing) existing.qty++;
+      else cart.push({ ...product, qty: 1 });
+      updateCartUI();
+      openCart();
+      showToast(product.name + ' added to cart! 💕');
+    }
 
-function updateCartUI() {
-  const badge = document.getElementById('cartBadge');
-  const totalItems = cart.reduce((s, i) => s + i.qty, 0);
-  badge.textContent = totalItems;
-  badge.classList.toggle('show', totalItems > 0);
+    function updateCartUI() {
+      const badge = document.getElementById('cartBadge');
+      const totalItems = cart.reduce((s, i) => s + i.qty, 0);
+      badge.textContent = totalItems;
+      badge.classList.toggle('show', totalItems > 0);
 
-  const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
-  document.getElementById('cartTotal').textContent = 'R' + total;
+      const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+      document.getElementById('cartTotal').textContent = 'R' + total;
 
-  const cartItemsEl = document.getElementById('cartItems');
-  if (cart.length === 0) {
-    cartItemsEl.innerHTML = `<div class="cart-empty"><div style="font-size:48px">🛍️</div><p>Your cart is empty.<br>Shop our beautiful lash collection!</p></div>`;
-    return;
-  }
-  cartItemsEl.innerHTML = cart.map(item => `
+      const cartItemsEl = document.getElementById('cartItems');
+      if (cart.length === 0) {
+        cartItemsEl.innerHTML = `<div class="cart-empty"><div style="font-size:48px">🛍️</div><p>Your cart is empty.<br>Shop our beautiful lash collection!</p></div>`;
+        return;
+      }
+      cartItemsEl.innerHTML = cart.map(item => `
     <div class="cart-item">
       <div class="cart-item-thumb">${item.icon}</div>
       <div class="cart-item-info">
@@ -1888,82 +2816,82 @@ function updateCartUI() {
       <button class="remove-item" onclick="removeItem(${item.id})">×</button>
     </div>
   `).join('');
-}
+    }
 
-function changeQty(id, delta) {
-  const item = cart.find(i => i.id === id);
-  if (!item) return;
-  item.qty += delta;
-  if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
-  updateCartUI();
-}
+    function changeQty(id, delta) {
+      const item = cart.find(i => i.id === id);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+      updateCartUI();
+    }
 
-function removeItem(id) {
-  cart = cart.filter(i => i.id !== id);
-  updateCartUI();
-}
+    function removeItem(id) {
+      cart = cart.filter(i => i.id !== id);
+      updateCartUI();
+    }
 
-function clearCart() {
-  cart = [];
-  updateCartUI();
-}
+    function clearCart() {
+      cart = [];
+      updateCartUI();
+    }
 
-function openCart() {
-  document.getElementById('cartSidebar').classList.add('open');
-  document.getElementById('cartOverlay').classList.add('open');
-}
-function closeCart() {
-  document.getElementById('cartSidebar').classList.remove('open');
-  document.getElementById('cartOverlay').classList.remove('open');
-}
+    function openCart() {
+      document.getElementById('cartSidebar').classList.add('open');
+      document.getElementById('cartOverlay').classList.add('open');
+    }
+    function closeCart() {
+      document.getElementById('cartSidebar').classList.remove('open');
+      document.getElementById('cartOverlay').classList.remove('open');
+    }
 
-// ─── CHECKOUT ──────────────────────────────────────────────────
-function openCheckout() {
-  if (cart.length === 0) { showToast('Your cart is empty!'); return; }
-  closeCart();
-  document.getElementById('checkoutModal').classList.add('open');
-  document.getElementById('checkoutForm').style.display = 'block';
-  document.getElementById('orderSuccess').style.display = 'none';
-}
-function closeCheckout() {
-  document.getElementById('checkoutModal').classList.remove('open');
-}
-function placeOrder() {
-  const name = document.getElementById('ckName').value;
-  const email = document.getElementById('ckEmail').value;
-  if (!name || !email) { showToast('Please fill in your name and email.'); return; }
-  document.getElementById('checkoutForm').style.display = 'none';
-  document.getElementById('orderSuccess').style.display = 'block';
-}
+    // ─── CHECKOUT ──────────────────────────────────────────────────
+    function openCheckout() {
+      if (cart.length === 0) { showToast('Your cart is empty!'); return; }
+      closeCart();
+      document.getElementById('checkoutModal').classList.add('open');
+      document.getElementById('checkoutForm').style.display = 'block';
+      document.getElementById('orderSuccess').style.display = 'none';
+    }
+    function closeCheckout() {
+      document.getElementById('checkoutModal').classList.remove('open');
+    }
+    function placeOrder() {
+      const name = document.getElementById('ckName').value;
+      const email = document.getElementById('ckEmail').value;
+      if (!name || !email) { showToast('Please fill in your name and email.'); return; }
+      document.getElementById('checkoutForm').style.display = 'none';
+      document.getElementById('orderSuccess').style.display = 'block';
+    }
 
-// ─── TOAST ─────────────────────────────────────────────────────
-function showToast(msg) {
-  const t = document.createElement('div');
-  t.style.cssText = `
+    // ─── TOAST ─────────────────────────────────────────────────────
+    function showToast(msg) {
+      const t = document.createElement('div');
+      t.style.cssText = `
     position:fixed; bottom:32px; left:50%; transform:translateX(-50%);
     background:var(--warm-dark); color:#fff; padding:14px 28px;
     border-radius:50px; font-size:13px; font-weight:600;
     box-shadow:0 8px 30px rgba(0,0,0,0.25); z-index:9999;
     animation:fadeUp 0.3s ease;
   `;
-  t.textContent = msg;
-  document.body.appendChild(t);
-  setTimeout(() => t.remove(), 3000);
-}
+      t.textContent = msg;
+      document.body.appendChild(t);
+      setTimeout(() => t.remove(), 3000);
+    }
 
-// ─── FAQ ───────────────────────────────────────────────────────
-const faqs = [
-  { q: 'Do I need experience to join the training?', a: 'Not at all! Our Lash Basics Course is designed for complete beginners. All you need is enthusiasm and a passion for beauty.' },
-  { q: 'Where does training take place?', a: 'All training sessions are held at our studio in Fourways, Johannesburg. We\'ll share the exact address when you book.' },
-  { q: 'What\'s included in the kit during training?', a: 'Your kit is included in the course fee. Depending on the package, this includes lash trays, glue, tweezers, under-eye pads, and a practice mannequin.' },
-  { q: 'How many students are in each class?', a: 'We keep our classes small — a maximum of 6 students — to ensure every student gets personal attention and hands-on practice.' },
-  { q: 'Can I do training if I\'m not from Johannesburg?', a: 'Absolutely! We have students who travel from all over South Africa. We can help you plan your visit. Online theory sessions may also be arranged.' },
-  { q: 'Is there payment plan available?', a: 'Yes! We understand affordability matters. Contact Nonhlanhla directly via WhatsApp to discuss a deposit and instalment arrangement that works for you.' },
-];
-function renderFAQs() {
-  const el = document.getElementById('faqList');
-  if (!el) return;
-  el.innerHTML = faqs.map((f, i) => `
+    // ─── FAQ ───────────────────────────────────────────────────────
+    const faqs = [
+      { q: 'Do I need experience to join the training?', a: 'Not at all! Our Lash Basics Course is designed for complete beginners. All you need is enthusiasm and a passion for beauty.' },
+      { q: 'Where does training take place?', a: 'All training sessions are held at our studio in Fourways, Johannesburg. We\'ll share the exact address when you book.' },
+      { q: 'What\'s included in the kit during training?', a: 'Your kit is included in the course fee. Depending on the package, this includes lash trays, glue, tweezers, under-eye pads, and a practice mannequin.' },
+      { q: 'How many students are in each class?', a: 'We keep our classes small — a maximum of 6 students — to ensure every student gets personal attention and hands-on practice.' },
+      { q: 'Can I do training if I\'m not from Johannesburg?', a: 'Absolutely! We have students who travel from all over South Africa. We can help you plan your visit. Online theory sessions may also be arranged.' },
+      { q: 'Is there payment plan available?', a: 'Yes! We understand affordability matters. Contact Nonhlanhla directly via WhatsApp to discuss a deposit and instalment arrangement that works for you.' },
+    ];
+    function renderFAQs() {
+      const el = document.getElementById('faqList');
+      if (!el) return;
+      el.innerHTML = faqs.map((f, i) => `
     <div style="margin-bottom:12px;background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(58,46,40,0.06)">
       <button onclick="toggleFaq(${i})" id="fq-btn-${i}" style="width:100%;padding:20px 24px;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:'Jost',sans-serif;font-size:15px;font-weight:600;color:var(--warm-dark);text-align:left">
         ${f.q}
@@ -1972,35 +2900,36 @@ function renderFAQs() {
       <div id="fq-body-${i}" style="display:none;padding:0 24px 20px;font-size:14px;color:var(--warm-mid);line-height:1.8">${f.a}</div>
     </div>
   `).join('');
-}
-function toggleFaq(i) {
-  const body = document.getElementById('fq-body-' + i);
-  const icon = document.getElementById('fq-icon-' + i);
-  const open = body.style.display === 'block';
-  body.style.display = open ? 'none' : 'block';
-  icon.textContent = open ? '+' : '−';
-  icon.style.transform = open ? '' : 'rotate(45deg)';
-}
+    }
+    function toggleFaq(i) {
+      const body = document.getElementById('fq-body-' + i);
+      const icon = document.getElementById('fq-icon-' + i);
+      const open = body.style.display === 'block';
+      body.style.display = open ? 'none' : 'block';
+      icon.textContent = open ? '+' : '−';
+      icon.style.transform = open ? '' : 'rotate(45deg)';
+    }
 
-// ─── CONTACT FORM ──────────────────────────────────────────────
-function submitContactForm() {
-  const name = document.getElementById('cfName').value;
-  const email = document.getElementById('cfEmail').value;
-  if (!name || !email) { showToast('Please enter your name and email.'); return; }
-  document.getElementById('contactFormFields').classList.add('hide');
-  document.getElementById('formSuccess').classList.add('show');
-}
-function resetContactForm() {
-  document.getElementById('contactFormFields').classList.remove('hide');
-  document.getElementById('formSuccess').classList.remove('show');
-  ['cfName','cfEmail','cfPhone','cfMessage'].forEach(id => document.getElementById(id).value = '');
-}
+    // ─── CONTACT FORM ──────────────────────────────────────────────
+    function submitContactForm() {
+      const name = document.getElementById('cfName').value;
+      const email = document.getElementById('cfEmail').value;
+      if (!name || !email) { showToast('Please enter your name and email.'); return; }
+      document.getElementById('contactFormFields').classList.add('hide');
+      document.getElementById('formSuccess').classList.add('show');
+    }
+    function resetContactForm() {
+      document.getElementById('contactFormFields').classList.remove('hide');
+      document.getElementById('formSuccess').classList.remove('show');
+      ['cfName', 'cfEmail', 'cfPhone', 'cfMessage'].forEach(id => document.getElementById(id).value = '');
+    }
 
-// ─── INIT ──────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', () => {
-  renderProducts('all');
-  renderFAQs();
-});
-</script>
+    // ─── INIT ──────────────────────────────────────────────────────
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProducts('all');
+      renderFAQs();
+    });
+  </script>
 </body>
+
 </html>
